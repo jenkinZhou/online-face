@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.jenkin.onlineface.users.mapper.UserMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.jenkin.onlineface.users.entity.User">
+        <id column="id" property="id" />
+        <result column="face_user_code" property="faceUserCode" />
+        <result column="face_user_name" property="faceUserName" />
+        <result column="face_user_email" property="faceUserEmail" />
+        <result column="face_user_password" property="faceUserPassword" />
+        <result column="face_user_status" property="faceUserStatus" />
+        <result column="face_user_points" property="faceUserPoints" />
+        <result column="del_flag" property="delFlag" />
+        <result column="created_by" property="createdBy" />
+        <result column="creation_date" property="creationDate" />
+        <result column="last_update_date" property="lastUpdateDate" />
+        <result column="last_updated_by" property="lastUpdatedBy" />
+        <result column="version_number" property="versionNumber" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        id, face_user_code, face_user_name, face_user_email, face_user_password, face_user_status, face_user_points, del_flag, created_by, creation_date, last_update_date, last_updated_by, version_number
+    </sql>
+
+</mapper>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.jenkin.onlineface.questions.mapper.QuestionsMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.jenkin.onlineface.questions.entity.Questions">
+        <id column="id" property="id" />
+        <result column="face_seq_number" property="faceSeqNumber" />
+        <result column="face_title" property="faceTitle" />
+        <result column="face_content" property="faceContent" />
+        <result column="face_standard_answer" property="faceStandardAnswer" />
+        <result column="face_type_fourth" property="faceTypeFourth" />
+        <result column="face_type_third" property="faceTypeThird" />
+        <result column="face_type_seond" property="faceTypeSeond" />
+        <result column="face_type_first" property="faceTypeFirst" />
+        <result column="face_tag" property="faceTag" />
+        <result column="answer_note" property="answerNote" />
+        <result column="face_note" property="faceNote" />
+        <result column="face_approve_status" property="faceApproveStatus" />
+        <result column="del_flag" property="delFlag" />
+        <result column="created_by" property="createdBy" />
+        <result column="creation_date" property="creationDate" />
+        <result column="last_update_date" property="lastUpdateDate" />
+        <result column="last_updated_by" property="lastUpdatedBy" />
+        <result column="version_number" property="versionNumber" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        id, face_seq_number, face_title, face_content, face_standard_answer, face_type_fourth, face_type_third, face_type_seond, face_type_first, face_tag, answer_note, face_note, face_approve_status, del_flag, created_by, creation_date, last_update_date, last_updated_by, version_number
+    </sql>
+
+</mapper>

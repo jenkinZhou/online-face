@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.jenkin.onlineface.users.mapper.QuestionCommentsMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.jenkin.onlineface.users.entity.QuestionComments">
+        <id column="id" property="id" />
+        <result column="question_id" property="questionId" />
+        <result column="reply_comment_id" property="replyCommentId" />
+        <result column="question_comment" property="questionComment" />
+        <result column="del_flag" property="delFlag" />
+        <result column="created_by" property="createdBy" />
+        <result column="creation_date" property="creationDate" />
+        <result column="last_update_date" property="lastUpdateDate" />
+        <result column="last_updated_by" property="lastUpdatedBy" />
+        <result column="version_number" property="versionNumber" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        id, question_id, reply_comment_id, question_comment, del_flag, created_by, creation_date, last_update_date, last_updated_by, version_number
+    </sql>
+
+</mapper>

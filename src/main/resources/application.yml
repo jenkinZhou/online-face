@@ -1,0 +1,6 @@
+spring:
+  datasource:
+    url: dbc:mysql://119.29.175.198:1995/face_online?useUnicode=true&useSSL=false&characterEncoding=utf8
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: jenkin
+    password: ZhoujinJenkin@1995
