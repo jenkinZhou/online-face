@@ -6,6 +6,8 @@ import com.baomidou.mybatisplus.extension.activerecord.Model;
 import com.baomidou.mybatisplus.annotation.TableId;
 import java.time.LocalDateTime;
 import java.io.Serializable;
+import io.swagger.annotations.ApiModel;
+import io.swagger.annotations.ApiModelProperty;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
 import lombok.experimental.Accessors;
@@ -22,6 +24,7 @@ import lombok.experimental.Accessors;
 @EqualsAndHashCode(callSuper = false)
 @Accessors(chain = true)
 @TableName("face_point_change")
+@ApiModel(value="PointChange对象", description="")
 public class PointChange extends Model<PointChange> {
 
     private static final long serialVersionUID=1L;
@@ -29,59 +32,37 @@ public class PointChange extends Model<PointChange> {
     @TableId(value = "id", type = IdType.AUTO)
     private Integer id;
 
-    /**
-     * 用户编码
-     */
+    @ApiModelProperty(value = "用户编码")
     private String faceUserCode;
 
-    /**
-     * 积分变动数目
-     */
+    @ApiModelProperty(value = "积分变动数目")
     private Integer pointChangeNum;
 
-    /**
-     * 积分变动时间
-     */
+    @ApiModelProperty(value = "积分变动时间")
     private LocalDateTime pointChangeDate;
 
-    /**
-     * 积分变动类型，上传题目？做题？。。。
-     */
+    @ApiModelProperty(value = "积分变动类型，上传题目？做题？。。。")
     private String pointChangeType;
 
-    /**
-     * 积分变动详情
-     */
+    @ApiModelProperty(value = "积分变动详情")
     private String pointChangeContent;
 
-    /**
-     * 逻辑删除字段
-     */
+    @ApiModelProperty(value = "逻辑删除字段")
     private String delFlag;
 
-    /**
-     * 创建人
-     */
+    @ApiModelProperty(value = "创建人")
     private String createdBy;
 
-    /**
-     * 创建时间
-     */
+    @ApiModelProperty(value = "创建时间")
     private LocalDateTime creationDate;
 
-    /**
-     * 更新时间
-     */
+    @ApiModelProperty(value = "更新时间")
     private LocalDateTime lastUpdateDate;
 
-    /**
-     * 更新人
-     */
+    @ApiModelProperty(value = "更新人")
     private String lastUpdatedBy;
 
-    /**
-     * 版本号
-     */
+    @ApiModelProperty(value = "版本号")
     private Integer versionNumber;
 
 

@@ -51,6 +51,7 @@ public class Generator {
                 .setOpen(false)//不要自动打开目录
                 .setFileOverride(true)//第二次生成会把第一次生成的覆盖掉
                 .setIdType(IdType.AUTO)//主键策略
+                .setSwagger2(true)
                 .setServiceName("%sService")//生成的service接口名字首字母是否为I，这样设置就没有I
                 .setBaseResultMap(true)//生成resultMap
                 .setBaseColumnList(true);//在xml中生成基础列

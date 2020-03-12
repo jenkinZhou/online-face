@@ -1,6 +1,16 @@
 spring:
   datasource:
-    url: dbc:mysql://119.29.175.198:1995/face_online?useUnicode=true&useSSL=false&characterEncoding=utf8
+    url: jdbc:mysql://119.29.175.198:1995/face_online?useUnicode=true&useSSL=false&characterEncoding=utf8
     driver-class-name: com.mysql.cj.jdbc.Driver
     username: jenkin
     password: ZhoujinJenkin@1995
+mybatis-plus:
+  type-aliases-package: com.jenkin.onlineface.users.entity,com.jenkin.onlineface.attachments.entity,com.jenkin.onlineface.questions.entity
+  configuration:
+    map-underscore-to-camel-case: true
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+  mapper-locations: classpath:/com/jenkin/onlineface/**/mapper/*.xml
+server:
+  servlet:
+    context-path: /face
+

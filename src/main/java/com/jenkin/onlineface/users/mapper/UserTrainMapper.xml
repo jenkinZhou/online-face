@@ -8,6 +8,12 @@
         <result column="user_id" property="userId" />
         <result column="question_record_id" property="questionRecordId" />
         <result column="face_train_type" property="faceTrainType" />
+        <result column="question_num" property="questionNum" />
+        <result column="filter_question_first_type" property="filterQuestionFirstType" />
+        <result column="filter_question_second_type" property="filterQuestionSecondType" />
+        <result column="filter_question_third_type" property="filterQuestionThirdType" />
+        <result column="filter_question_fourth_type" property="filterQuestionFourthType" />
+        <result column="filter_type" property="filterType" />
         <result column="face_train_result" property="faceTrainResult" />
         <result column="del_flag" property="delFlag" />
         <result column="created_by" property="createdBy" />
@@ -19,7 +25,7 @@
 
     <!-- 通用查询结果列 -->
     <sql id="Base_Column_List">
-        id, user_id, question_record_id, face_train_type, face_train_result, del_flag, created_by, creation_date, last_update_date, last_updated_by, version_number
+        id, user_id, question_record_id, face_train_type, question_num, filter_question_first_type, filter_question_second_type, filter_question_third_type, filter_question_fourth_type, filter_type, face_train_result, del_flag, created_by, creation_date, last_update_date, last_updated_by, version_number
     </sql>
 
 </mapper>

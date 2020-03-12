@@ -6,6 +6,8 @@ import com.baomidou.mybatisplus.extension.activerecord.Model;
 import com.baomidou.mybatisplus.annotation.TableId;
 import java.time.LocalDateTime;
 import java.io.Serializable;
+import io.swagger.annotations.ApiModel;
+import io.swagger.annotations.ApiModelProperty;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
 import lombok.experimental.Accessors;
@@ -22,6 +24,7 @@ import lombok.experimental.Accessors;
 @EqualsAndHashCode(callSuper = false)
 @Accessors(chain = true)
 @TableName("face_questions")
+@ApiModel(value="Questions对象", description="")
 public class Questions extends Model<Questions> {
 
     private static final long serialVersionUID=1L;
@@ -29,91 +32,57 @@ public class Questions extends Model<Questions> {
     @TableId(value = "id", type = IdType.AUTO)
     private Integer id;
 
-    /**
-     * 题目序号
-     */
+    @ApiModelProperty(value = "题目序号")
     private Integer faceSeqNumber;
 
-    /**
-     * 题目标题
-     */
+    @ApiModelProperty(value = "题目标题")
     private String faceTitle;
 
-    /**
-     * 题目描述
-     */
+    @ApiModelProperty(value = "题目描述")
     private String faceContent;
 
-    /**
-     * 题目标准答案
-     */
+    @ApiModelProperty(value = "题目标准答案")
     private String faceStandardAnswer;
 
     private Integer faceTypeFourth;
 
-    /**
-     * 题目的三级分类（基础，并发，网络。。。）
-     */
+    @ApiModelProperty(value = "题目的三级分类（基础，并发，网络。。。）")
     private Integer faceTypeThird;
 
-    /**
-     * 题目的二级分类（java，C，C++。。。）
-     */
-    private Integer faceTypeSeond;
+    @ApiModelProperty(value = "题目的二级分类（java，C，C++。。。）")
+    private Integer faceTypeSecond;
 
-    /**
-     * 题目的以及分类（计算机网络、编程语言）
-     */
+    @ApiModelProperty(value = "题目的以及分类（计算机网络、编程语言）")
     private Integer faceTypeFirst;
 
-    /**
-     * 题目标签
-     */
+    @ApiModelProperty(value = "题目标签")
     private String faceTag;
 
-    /**
-     * 答案描述
-     */
+    @ApiModelProperty(value = "答案描述")
     private String answerNote;
 
-    /**
-     * 题目描述
-     */
+    @ApiModelProperty(value = "题目描述")
     private String faceNote;
 
-    /**
-     * 题目的审核状态
-     */
+    @ApiModelProperty(value = "题目的审核状态")
     private String faceApproveStatus;
 
-    /**
-     * 逻辑删除字段
-     */
+    @ApiModelProperty(value = "逻辑删除字段")
     private String delFlag;
 
-    /**
-     * 创建人
-     */
+    @ApiModelProperty(value = "创建人")
     private String createdBy;
 
-    /**
-     * 创建时间
-     */
+    @ApiModelProperty(value = "创建时间")
     private LocalDateTime creationDate;
 
-    /**
-     * 更新时间
-     */
+    @ApiModelProperty(value = "更新时间")
     private LocalDateTime lastUpdateDate;
 
-    /**
-     * 更新人
-     */
+    @ApiModelProperty(value = "更新人")
     private String lastUpdatedBy;
 
-    /**
-     * 版本号
-     */
+    @ApiModelProperty(value = "版本号")
     private Integer versionNumber;
 
 

@@ -15,6 +15,9 @@
         <result column="last_updated_by" property="lastUpdatedBy" />
         <result column="version_number" property="versionNumber" />
     </resultMap>
+    <!--<resultMap id="map" type="java.util.Map">-->
+        <!---->
+    <!--</resultMap>-->
 
     <!-- 通用查询结果列 -->
     <sql id="Base_Column_List">

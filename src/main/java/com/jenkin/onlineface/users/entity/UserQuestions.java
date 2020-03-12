@@ -3,9 +3,11 @@ package com.jenkin.onlineface.users.entity;
 import com.baomidou.mybatisplus.annotation.TableName;
 import com.baomidou.mybatisplus.annotation.IdType;
 import com.baomidou.mybatisplus.extension.activerecord.Model;
-import java.time.LocalDateTime;
 import com.baomidou.mybatisplus.annotation.TableId;
+import java.time.LocalDateTime;
 import java.io.Serializable;
+import io.swagger.annotations.ApiModel;
+import io.swagger.annotations.ApiModelProperty;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
 import lombok.experimental.Accessors;
@@ -22,6 +24,7 @@ import lombok.experimental.Accessors;
 @EqualsAndHashCode(callSuper = false)
 @Accessors(chain = true)
 @TableName("face_user_questions")
+@ApiModel(value="UserQuestions对象", description="")
 public class UserQuestions extends Model<UserQuestions> {
 
     private static final long serialVersionUID=1L;
@@ -29,49 +32,31 @@ public class UserQuestions extends Model<UserQuestions> {
     @TableId(value = "id", type = IdType.AUTO)
     private Integer id;
 
-    /**
-     * 用户ID
-     */
-    private Integer faceUserId;
+    @ApiModelProperty(value = "用户编码")
+    private String faceUserCode;
 
-    /**
-     * 用户需要忽略的问题ID
-     */
+    @ApiModelProperty(value = "用户需要忽略的问题ID")
     private Integer faceQuestionId;
 
-    /**
-     * 忽略（ignore）还是 收藏（star）
-     */
+    @ApiModelProperty(value = "忽略（ignore）还是 收藏（star）")
     private String faceQuestionFlag;
 
-    /**
-     * 逻辑删除字段
-     */
+    @ApiModelProperty(value = "逻辑删除字段")
     private String delFlag;
 
-    /**
-     * 创建人
-     */
+    @ApiModelProperty(value = "创建人")
     private String createdBy;
 
-    /**
-     * 创建时间
-     */
+    @ApiModelProperty(value = "创建时间")
     private LocalDateTime creationDate;
 
-    /**
-     * 更新时间
-     */
+    @ApiModelProperty(value = "更新时间")
     private LocalDateTime lastUpdateDate;
 
-    /**
-     * 更新人
-     */
+    @ApiModelProperty(value = "更新人")
     private String lastUpdatedBy;
 
-    /**
-     * 版本号
-     */
+    @ApiModelProperty(value = "版本号")
     private Integer versionNumber;
 
 

@@ -1,7 +1,6 @@
-package com.jenkin.onlineface.config;
+package com.jenkin.onlineface.commons.config;
 
 import com.baomidou.mybatisplus.core.handlers.MetaObjectHandler;
-import com.baomidou.mybatisplus.core.injector.ISqlInjector;
 import com.baomidou.mybatisplus.core.parser.ISqlParser;
 import com.baomidou.mybatisplus.extension.parsers.BlockAttackSqlParser;
 import com.baomidou.mybatisplus.extension.plugins.OptimisticLockerInterceptor;
@@ -11,7 +10,6 @@ import org.apache.ibatis.reflection.MetaObject;
 import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
-import org.springframework.context.annotation.Profile;
 import org.springframework.transaction.annotation.EnableTransactionManagement;
 
 import java.util.ArrayList;
@@ -23,7 +21,7 @@ import java.util.List;
  */
 @Configuration
 @EnableTransactionManagement
-@MapperScan(basePackages = {"com.jenkin.onlineface"})
+//@MapperScan(basePackages = {"com.jenkin.onlineface"})
 public class SingleDataSourceConfig {
 
 
@@ -102,7 +100,7 @@ public class SingleDataSourceConfig {
             @Override
             public void updateFill(MetaObject metaObject) {
                 Object fieldValue = getFieldValByName("version_number",metaObject);//获取需要填充的字段
-                setFieldValByName("version_number",(fieldValue==null?0:Integer.parseInt(String.valueOf(fieldValue)))+1,metaObject);  //那就将其设置为"朱茵"
+                setFieldValByName("version_number",(fieldValue==null?0:Integer.parseInt(String.valueOf(fieldValue)))+1,metaObject);
                 setFieldValByName("last_update_date",new Date(),metaObject);
                 //TODO 待补充
                 setFieldValByName("last_updated_by","jenkin",metaObject);

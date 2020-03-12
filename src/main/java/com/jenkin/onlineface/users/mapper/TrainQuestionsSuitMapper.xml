@@ -6,6 +6,7 @@
     <resultMap id="BaseResultMap" type="com.jenkin.onlineface.users.entity.TrainQuestionsSuit">
         <id column="id" property="id" />
         <result column="face_train_question_id" property="faceTrainQuestionId" />
+        <result column="face_train_id" property="faceTrainId" />
         <result column="face_train_queston_answer" property="faceTrainQuestonAnswer" />
         <result column="face_train_difficulty" property="faceTrainDifficulty" />
         <result column="face_train_pass" property="faceTrainPass" />
@@ -20,7 +21,7 @@
 
     <!-- 通用查询结果列 -->
     <sql id="Base_Column_List">
-        id, face_train_question_id, face_train_queston_answer, face_train_difficulty, face_train_pass, face_train_note, del_flag, created_by, creation_date, last_update_date, last_updated_by, version_number
+        id, face_train_question_id, face_train_id, face_train_queston_answer, face_train_difficulty, face_train_pass, face_train_note, del_flag, created_by, creation_date, last_update_date, last_updated_by, version_number
     </sql>
 
 </mapper>
