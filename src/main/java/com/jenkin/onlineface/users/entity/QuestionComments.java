@@ -16,7 +16,7 @@ import lombok.experimental.Accessors;
  * </p>
  *
  * @author jenkin
- * @since 2020-03-11
+ * @since 2020-03-12
  */
 @Data
 @EqualsAndHashCode(callSuper = false)
@@ -67,7 +67,7 @@ public class QuestionComments extends Model<QuestionComments> {
     /**
      * 更新人
      */
-    private LocalDateTime lastUpdatedBy;
+    private String lastUpdatedBy;
 
     /**
      * 版本号

@@ -4,13 +4,13 @@ import com.baomidou.mybatisplus.annotation.DbType;
 import com.baomidou.mybatisplus.annotation.IdType;
 import com.baomidou.mybatisplus.core.exceptions.MybatisPlusException;
 import com.baomidou.mybatisplus.core.toolkit.StringPool;
-import com.baomidou.mybatisplus.core.toolkit.StringUtils;
 import com.baomidou.mybatisplus.generator.AutoGenerator;
 import com.baomidou.mybatisplus.generator.InjectionConfig;
 import com.baomidou.mybatisplus.generator.config.*;
 import com.baomidou.mybatisplus.generator.config.po.TableInfo;
 import com.baomidou.mybatisplus.generator.config.rules.NamingStrategy;
 import com.baomidou.mybatisplus.generator.engine.FreemarkerTemplateEngine;
+import org.springframework.util.StringUtils;
 
 
 import java.util.ArrayList;
@@ -29,7 +29,7 @@ public class Generator {
         System.out.println(("请输入" + tip + "："));
         if (scanner.hasNext()) {
             String ipt = scanner.next();
-            if (StringUtils.isNotEmpty(ipt)) {
+            if (!StringUtils.isEmpty(ipt)) {
                 return ipt;
             }
         }

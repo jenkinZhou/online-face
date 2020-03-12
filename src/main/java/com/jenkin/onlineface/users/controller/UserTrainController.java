@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.RestController;
  * </p>
  *
  * @author jenkin
- * @since 2020-03-11
+ * @since 2020-03-12
  */
 @RestController
 @RequestMapping("/users/user-train")
