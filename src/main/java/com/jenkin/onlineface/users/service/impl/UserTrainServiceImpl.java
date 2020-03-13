@@ -3,6 +3,7 @@ package com.jenkin.onlineface.users.service.impl;
 import com.baomidou.mybatisplus.core.conditions.Wrapper;
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.baomidou.mybatisplus.core.toolkit.Wrappers;
+import com.jenkin.onlineface.commons.config.MyQueryWrapper;
 import com.jenkin.onlineface.commons.utils.CommonUtils;
 import com.jenkin.onlineface.questions.entity.Questions;
 import com.jenkin.onlineface.questions.service.QuestionsService;
@@ -58,7 +59,7 @@ public class UserTrainServiceImpl extends ServiceImpl<UserTrainMapper, UserTrain
     public void startTrain(UserTrain userTrain) {
         this.save(userTrain);
         if (userTrain.getId()==null) {
-            logger.info("ID为空");
+            logger.error("ID为空");
         }
         createQuestionSuit(userTrain);
     }
@@ -85,8 +86,8 @@ public class UserTrainServiceImpl extends ServiceImpl<UserTrainMapper, UserTrain
         if (limit==0) {
             return new ArrayList<>();
         }
-        QueryWrapper<UserTrain> queryWrapper = Wrappers.<UserTrain>query()
-                .eq("user_code", CommonUtils.getCurrentUser())
+        MyQueryWrapper<UserTrain> queryWrapper = MyQueryWrapper.query();
+                queryWrapper.eq("user_code", CommonUtils.getCurrentUser())
                 .eq("face_train_status", FACE_TRAIN_END.getCode())
                 .orderByDesc("last_update_date")
                 .last("limit " + limit);
@@ -114,22 +115,21 @@ public class UserTrainServiceImpl extends ServiceImpl<UserTrainMapper, UserTrain
      */
     private void createQuestionSuit(UserTrain userTrain) {
 
-
-
         //根据类型获取题目
         List<Questions> questions= getQuestionByType(userTrain);
        List<TrainQuestionsSuit>  trainQuestionsSuits = new ArrayList<>();
+       //生成一套题目
         if (!CollectionUtils.isEmpty(questions)) {
-            questions.forEach(item->{
+            int i=1;
+            for (Questions item : questions) {
                 TrainQuestionsSuit trainQuestionsSuit = new TrainQuestionsSuit();
                 trainQuestionsSuit.setFaceTrainId(userTrain.getId());
                 trainQuestionsSuit.setFaceTrainQuestionId(item.getId());
+                trainQuestionsSuit.setFaceTrainQuestionSeq(i++);
                 trainQuestionsSuits.add(trainQuestionsSuit);
-            });
+            }
             trainQuestionsSuitService.saveBatch(trainQuestionsSuits);
         }
-
-
     }
 
     private List<Questions> getQuestionByType(UserTrain userTrain) {

@@ -2,6 +2,7 @@ package com.jenkin.onlineface.questions.service.impl;
 
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.baomidou.mybatisplus.core.toolkit.Wrappers;
+import com.jenkin.onlineface.commons.config.MyQueryWrapper;
 import com.jenkin.onlineface.commons.utils.CommonUtils;
 import com.jenkin.onlineface.questions.entity.Questions;
 import com.jenkin.onlineface.questions.mapper.QuestionsMapper;
@@ -61,12 +62,14 @@ public class QuestionsServiceImpl extends ServiceImpl<QuestionsMapper, Questions
         Set<Integer> second = CommonUtils.getIntegers(filterQuestionSecondType);
         Set<Integer> third = CommonUtils.getIntegers(filterQuestionThirdType);
         Set<Integer> fourth = CommonUtils.getIntegers(filterQuestionFourthType);
-        QueryWrapper<Questions> queryWrapper = Wrappers.<Questions>query().and(i -> i.in("face_type_first", first).or()
-                .in("face_type_second", second)
-                .in("face_type_third", third)
-                .in("face_type_fourth", fourth)
-        ).and(i -> i.notIn("id", didIds))
-                .apply(" order by rand() limit " + questionNum);
+        MyQueryWrapper<Questions> queryWrapper = MyQueryWrapper.query();
+            queryWrapper.and(i ->
+                i.or().in(!CollectionUtils.isEmpty(first),"face_type_first", first)
+                .or().in(!CollectionUtils.isEmpty(second),"face_type_second", second)
+                .or().in(!CollectionUtils.isEmpty(third),"face_type_third", third)
+                .or().in(!CollectionUtils.isEmpty(fourth),"face_type_fourth", fourth)
+        ).notIn(!CollectionUtils.isEmpty(didIds),"id", didIds)
+                .last(" order by rand() limit " + questionNum);
         return list(queryWrapper);
     }
 

@@ -3,8 +3,10 @@ package com.jenkin.onlineface.users.entity.vos;
 import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
 import lombok.Data;
+import lombok.experimental.FieldNameConstants;
 
 @Data
+@FieldNameConstants
 @ApiModel("用户收藏的题目")
 public class UserQuestionsVO {
 

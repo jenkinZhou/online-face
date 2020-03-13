@@ -1,9 +1,8 @@
 package com.jenkin.onlineface.questions.entity;
 
-import com.baomidou.mybatisplus.annotation.TableName;
-import com.baomidou.mybatisplus.annotation.IdType;
+import com.baomidou.mybatisplus.annotation.*;
 import com.baomidou.mybatisplus.extension.activerecord.Model;
-import com.baomidou.mybatisplus.annotation.TableId;
+
 import java.time.LocalDateTime;
 import java.io.Serializable;
 import io.swagger.annotations.ApiModel;
@@ -71,18 +70,23 @@ public class Questions extends Model<Questions> {
     private String delFlag;
 
     @ApiModelProperty(value = "创建人")
+    @TableField(fill= FieldFill.INSERT)
     private String createdBy;
 
     @ApiModelProperty(value = "创建时间")
+    @TableField(fill= FieldFill.INSERT)
     private LocalDateTime creationDate;
 
     @ApiModelProperty(value = "更新时间")
+    @TableField(fill= FieldFill.INSERT_UPDATE)
     private LocalDateTime lastUpdateDate;
 
     @ApiModelProperty(value = "更新人")
+    @TableField(fill= FieldFill.INSERT_UPDATE)
     private String lastUpdatedBy;
 
     @ApiModelProperty(value = "版本号")
+    @Version
     private Integer versionNumber;
 
 

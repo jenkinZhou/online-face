@@ -1,6 +1,7 @@
 package com.jenkin.onlineface.users.controller;
 
 
+import com.jenkin.onlineface.commons.anno.EnableErrorCatch;
 import com.jenkin.onlineface.users.entity.UserQuestions;
 import com.jenkin.onlineface.users.entity.vos.UserQuestionsVO;
 import com.jenkin.onlineface.users.service.UserQuestionsService;
@@ -24,21 +25,14 @@ import java.util.List;
 @RestController
 @RequestMapping("/users/user-questions")
 @Api(tags = "用户收藏或拉黑的题目")
+@EnableErrorCatch("user-questions")
 public class UserQuestionsController {
 
     @Autowired
     private UserQuestionsService userQuestionsService;
-    @GetMapping("/listUserQuestions")
-    public List<UserQuestionsVO> listUserQuestions(){
-       return  userQuestionsService.listUserQuestions();
-    }
-    @GetMapping("/listAll")
-    public List<UserQuestions> listAll(){
-        return  userQuestionsService.list();
-    }
-    @GetMapping("/listByParam")
-    public List<UserQuestionsVO> listAll(String uid,String title){
-        return  userQuestionsService.listUserQuestionsByTitle(uid,title);
-    }
+
+
+
+
 }
 

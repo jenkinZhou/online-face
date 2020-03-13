@@ -1,9 +1,8 @@
 package com.jenkin.onlineface.users.entity;
 
-import com.baomidou.mybatisplus.annotation.TableName;
-import com.baomidou.mybatisplus.annotation.IdType;
+import com.baomidou.mybatisplus.annotation.*;
 import com.baomidou.mybatisplus.extension.activerecord.Model;
-import com.baomidou.mybatisplus.annotation.TableId;
+
 import java.time.LocalDateTime;
 import java.io.Serializable;
 import io.swagger.annotations.ApiModel;
@@ -11,6 +10,7 @@ import io.swagger.annotations.ApiModelProperty;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
 import lombok.experimental.Accessors;
+import lombok.experimental.FieldNameConstants;
 
 /**
  * <p>
@@ -23,6 +23,7 @@ import lombok.experimental.Accessors;
 @Data
 @EqualsAndHashCode(callSuper = false)
 @Accessors(chain = true)
+@FieldNameConstants
 @TableName("face_point_change")
 @ApiModel(value="PointChange对象", description="")
 public class PointChange extends Model<PointChange> {
@@ -51,18 +52,23 @@ public class PointChange extends Model<PointChange> {
     private String delFlag;
 
     @ApiModelProperty(value = "创建人")
+    @TableField(fill= FieldFill.INSERT)
     private String createdBy;
 
     @ApiModelProperty(value = "创建时间")
+    @TableField(fill= FieldFill.INSERT)
     private LocalDateTime creationDate;
 
     @ApiModelProperty(value = "更新时间")
+    @TableField(fill= FieldFill.INSERT_UPDATE)
     private LocalDateTime lastUpdateDate;
 
     @ApiModelProperty(value = "更新人")
+    @TableField(fill= FieldFill.INSERT_UPDATE)
     private String lastUpdatedBy;
 
     @ApiModelProperty(value = "版本号")
+    @Version
     private Integer versionNumber;
 
 

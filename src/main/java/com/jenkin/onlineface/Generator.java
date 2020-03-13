@@ -1,12 +1,14 @@
 package com.jenkin.onlineface;
 
 import com.baomidou.mybatisplus.annotation.DbType;
+import com.baomidou.mybatisplus.annotation.FieldFill;
 import com.baomidou.mybatisplus.annotation.IdType;
 import com.baomidou.mybatisplus.core.exceptions.MybatisPlusException;
 import com.baomidou.mybatisplus.core.toolkit.StringPool;
 import com.baomidou.mybatisplus.generator.AutoGenerator;
 import com.baomidou.mybatisplus.generator.InjectionConfig;
 import com.baomidou.mybatisplus.generator.config.*;
+import com.baomidou.mybatisplus.generator.config.po.TableFill;
 import com.baomidou.mybatisplus.generator.config.po.TableInfo;
 import com.baomidou.mybatisplus.generator.config.rules.NamingStrategy;
 import com.baomidou.mybatisplus.generator.engine.FreemarkerTemplateEngine;
@@ -18,6 +20,19 @@ import java.util.List;
 import java.util.Scanner;
 
 public class Generator {
+   static  List<TableFill> tableFillList = new ArrayList<>();
+
+static {
+    // 自定义需要填充的字段 数据库中的字段
+
+    tableFillList.add(new TableFill("last_update_date",FieldFill.INSERT_UPDATE));
+    tableFillList.add(new TableFill("last_update_by", FieldFill.INSERT_UPDATE));
+    tableFillList.add(new TableFill("create_by", FieldFill.INSERT));
+    tableFillList.add(new TableFill("creation_date", FieldFill.INSERT));
+
+
+}
+
 
     /**
      * <p>
@@ -70,6 +85,8 @@ public class Generator {
                 .setTablePrefix("face_")//表名前缀
                 .setEntityLombokModel(true)//使用lombok
                 .setRestControllerStyle(true)
+                .setVersionFieldName("version_number")
+                .setTableFillList(tableFillList)
                 .setControllerMappingHyphenStyle(true)
                 .setRestControllerStyle(true)
                 .setInclude(scanner("表名，多个英文逗号分割").split(","));//逆向工程使用的表

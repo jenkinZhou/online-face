@@ -3,8 +3,10 @@ package com.jenkin.onlineface.users.service.impl;
 import com.baomidou.mybatisplus.core.conditions.query.LambdaQueryWrapper;
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.baomidou.mybatisplus.core.toolkit.Wrappers;
+import com.jenkin.onlineface.commons.config.MyQueryWrapper;
 import com.jenkin.onlineface.commons.utils.CommonUtils;
 import com.jenkin.onlineface.users.entity.UserQuestions;
+import com.jenkin.onlineface.users.entity.UserTrain;
 import com.jenkin.onlineface.users.entity.vos.UserQuestionsVO;
 import com.jenkin.onlineface.users.mapper.UserQuestionsMapper;
 import com.jenkin.onlineface.users.service.UserQuestionsService;
@@ -51,8 +53,8 @@ public class UserQuestionsServiceImpl extends ServiceImpl<UserQuestionsMapper, U
 
     @Override
     public List<UserQuestionsVO> listUserQuestionsByPage(String uid, String title) {
-        QueryWrapper<UserQuestionsVO> queryWrapper =
-                Wrappers.<UserQuestionsVO>query().in("face_user_code", Arrays.asList(uid,title) );
+        MyQueryWrapper<UserQuestionsVO> queryWrapper = MyQueryWrapper.query();
+        queryWrapper.in("face_user_code", Arrays.asList(uid,title) );
         return userQuestionsMapper.listByPage(queryWrapper);
     }
 }

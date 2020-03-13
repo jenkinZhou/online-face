@@ -6,12 +6,14 @@ import com.baomidou.mybatisplus.extension.parsers.BlockAttackSqlParser;
 import com.baomidou.mybatisplus.extension.plugins.OptimisticLockerInterceptor;
 import com.baomidou.mybatisplus.extension.plugins.PaginationInterceptor;
 import com.baomidou.mybatisplus.extension.plugins.SqlExplainInterceptor;
+import com.jenkin.onlineface.commons.utils.CommonUtils;
 import org.apache.ibatis.reflection.MetaObject;
 import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.transaction.annotation.EnableTransactionManagement;
 
+import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
@@ -90,20 +92,17 @@ public class SingleDataSourceConfig {
         return new MetaObjectHandler() {
             @Override
             public void insertFill(MetaObject metaObject) {
-//                Object fieldValue = getFieldValByName("creation_date",metaObject); //获取需要填充的字段
-                setFieldValByName("creation_date",new Date(),metaObject);
-                //TODO 待补充
-                setFieldValByName("created_by","jenkin",metaObject);
-
+                this.strictInsertFill(metaObject, "creationDate", LocalDateTime.class, LocalDateTime.now());
+                this.strictInsertFill(metaObject, "createdBy", String.class, CommonUtils.getCurrentUser());
+                this.strictInsertFill(metaObject, "lastUpdateDate", LocalDateTime.class, LocalDateTime.now());
+                this.strictInsertFill(metaObject, "lastUpdatedBy", String.class, CommonUtils.getCurrentUser());
             }
 
             @Override
             public void updateFill(MetaObject metaObject) {
-                Object fieldValue = getFieldValByName("version_number",metaObject);//获取需要填充的字段
-                setFieldValByName("version_number",(fieldValue==null?0:Integer.parseInt(String.valueOf(fieldValue)))+1,metaObject);
-                setFieldValByName("last_update_date",new Date(),metaObject);
-                //TODO 待补充
-                setFieldValByName("last_updated_by","jenkin",metaObject);
+                this.strictInsertFill(metaObject, "lastUpdateDate", LocalDateTime.class, LocalDateTime.now());
+                this.strictInsertFill(metaObject, "lastUpdatedBy", String.class, CommonUtils.getCurrentUser());
+
             }
         };
     }
