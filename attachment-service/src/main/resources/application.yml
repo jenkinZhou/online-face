@@ -1,0 +1,29 @@
+spring:
+  datasource:
+    url: jdbc:mysql://119.29.175.198:1995/music_vote?setUnicode=true&characterEncoding=utf8
+    username: jenkin
+    password: ZhoujinJenkin@1995
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    type: com.alibaba.druid.pool.DruidDataSource
+  jpa:
+    properties:
+      hibernate:
+        hbm2ddl:
+          auto: update
+        dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+        format_sql: true
+    show-sql: true
+    database: mysql
+    hibernate:
+      naming:
+        implicit-strategy: org.springframework.boot.orm.jpa.hibernate.SpringImplicitNamingStrategy
+  main:
+    allow-bean-definition-overriding: true
+  servlet:
+    multipart:
+      max-file-size: 10MB
+      maxRequestSize: 80MB
+server:
+  port: 8085
+  tomcat:
+    connection-timeout: 1200000
