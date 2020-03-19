@@ -64,7 +64,7 @@ public class UserTrain extends Model<UserTrain> {
 
     @ApiModelProperty(value = "本次训练的结果")
     private Double faceTrainResult;
-    @ApiModelProperty("本次训练的状态")
+    @ApiModelProperty("本次训练的状态，进行中：doing,取消 ：cancel，结束：end")
     private String faceTrainStatus;
 
     @ApiModelProperty(value = "逻辑删除字段")

@@ -9,6 +9,7 @@ public enum FaceTrainEnum {
     FACE_LAST_TWO("lastTwo","最近两次做过的","不做最近两次做过的题目"),
     FACE_LAST_THREE("lastThree","最近三次做过的","不做最近三次做过的题目"),
     FACE_TRAIN_RUNNING("running","运行中","正在训练"),
+    FACE_TRAIN_CANCEL("cancel","cancel","训练取消"),
     FACE_TRAIN_END("end","end","训练结束");
 
     private FaceTrainEnum(String code, String name, String desc) {

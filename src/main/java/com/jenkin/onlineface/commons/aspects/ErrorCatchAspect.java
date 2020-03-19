@@ -10,10 +10,12 @@ import org.aspectj.lang.annotation.Around;
 import org.aspectj.lang.annotation.Aspect;
 import org.aspectj.lang.annotation.Pointcut;
 import org.aspectj.lang.reflect.MethodSignature;
+import org.springframework.stereotype.Component;
 
 import java.lang.reflect.Method;
 
 @Aspect
+@Component
 public class ErrorCatchAspect {
 
 
@@ -48,6 +50,7 @@ public class ErrorCatchAspect {
                 throw e;
             }
             FaceException exception=null;
+//            System.out.println(e.getClass().getName());
             if ("com.jenkin.onlineface.commons.exception.FaceException".equals(e.getClass().getName())) {
                 exception = (FaceException) e;
             }else{

@@ -36,7 +36,7 @@ public class QuestionTypes extends Model<QuestionTypes> {
 
     @ApiModelProperty(value = "题目类型的级别 1,2,3,4")
     private Integer faceQuestionTypeLevel;
-
+    @ApiModelProperty("题目的父亲的ID")
     private Integer parentId;
 
     @ApiModelProperty(value = "逻辑删除字段")

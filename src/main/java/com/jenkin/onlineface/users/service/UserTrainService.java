@@ -27,4 +27,11 @@ public interface UserTrainService extends IService<UserTrain> {
      */
     List<Integer> lastDidQuestionId(String lastTimes);
 
+    /**
+     * 柑橘类型判断当前是否有正在做的题
+     * @param trainType
+     * @return
+     */
+    UserTrain getCurrentUserTrainByType(String trainType);
+
 }

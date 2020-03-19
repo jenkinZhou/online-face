@@ -1,6 +1,7 @@
 package com.jenkin.onlineface.users.controller;
 
 
+import com.jenkin.onlineface.commons.anno.AutoDoc;
 import com.jenkin.onlineface.commons.anno.EnableErrorCatch;
 import com.jenkin.onlineface.commons.http.Response;
 import com.jenkin.onlineface.users.entity.UserTrain;
@@ -30,9 +31,22 @@ public class UserTrainController {
 
     @PostMapping("/createUserTrain")
     @ApiOperation("用户点击开始做题，会为用户生成一套题目")
+    @AutoDoc(paramClass = UserTrain.class)
     public Response<Object> createUserTrain(@RequestBody UserTrain userTrain){
         userTrainService.startTrain(userTrain);
         return Response.ok();
+    }
+    @GetMapping("/hasTrainByType")
+    @ApiOperation("根据类型判断是否已经有了正在做的题目")
+    public Response<Boolean> hasTrainByType(String trainType){
+        UserTrain trainByType = userTrainService.getCurrentUserTrainByType(trainType);
+        return Response.ok(trainByType!=null);
+    }
+
+    @GetMapping("/getDoc")
+    public Response getDoc(){
+        return Response.ok();
+
     }
 
 }

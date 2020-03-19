@@ -19,11 +19,16 @@ public class Response<T> {
         this.responseCode = responseCode;
         this.msg = msg;
     }
+    public Response(){}
 
-    public static <T> Response ok(){
+    public static  <T> Response<T> ok(){
         return new Response<T>("200","请求成功");
     }
-    public  Response data(T data){
+    public  static  <T>Response<T> ok(T data){
+        return new Response<T>("200","请求成功",data);
+    }
+
+    public  Response<T> data(T data){
         this.setData(data);
         return this;
     }

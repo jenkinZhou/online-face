@@ -1,6 +1,7 @@
 package com.jenkin.onlineface.users.controller;
 
 
+import com.jenkin.onlineface.commons.anno.EnableErrorCatch;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 import org.springframework.web.bind.annotation.RestController;
@@ -15,6 +16,8 @@ import org.springframework.web.bind.annotation.RestController;
  */
 @RestController
 @RequestMapping("/users/user")
+@EnableErrorCatch("user")
+
 public class UserController {
 
 

@@ -4,6 +4,8 @@ import com.baomidou.mybatisplus.core.conditions.Wrapper;
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.baomidou.mybatisplus.core.toolkit.Wrappers;
 import com.jenkin.onlineface.commons.config.MyQueryWrapper;
+import com.jenkin.onlineface.commons.enums.exception.ExceptionEnum;
+import com.jenkin.onlineface.commons.exception.FaceException;
 import com.jenkin.onlineface.commons.utils.CommonUtils;
 import com.jenkin.onlineface.questions.entity.Questions;
 import com.jenkin.onlineface.questions.service.QuestionsService;
@@ -104,6 +106,28 @@ public class UserTrainServiceImpl extends ServiceImpl<UserTrainMapper, UserTrain
             return ids;
         }
 
+    }
+
+    /**
+     * 柑橘类型判断当前是否有正在做的题
+     *
+     * @param trainType
+     * @return
+     */
+    @Override
+    public UserTrain getCurrentUserTrainByType(String trainType) {
+
+        if(!FACE_TRAIN_TYPE_CHOOSE.getCode().equals(trainType)&&
+            !FACE_TRAIN_TYPE_STAR.getCode().equals(trainType)){
+            throw new FaceException(ExceptionEnum.ERROR_PARAM_EXCEPTION,"类型错误！"+trainType);
+        }
+
+        MyQueryWrapper<UserTrain> queryWrapper = MyQueryWrapper.query();
+        queryWrapper
+                .eq(UserTrain.Fields.faceTrainType,trainType)
+                .eq(UserTrain.Fields.faceTrainStatus,FACE_TRAIN_RUNNING.getCode())
+                .eq(UserTrain.Fields.userCode,CommonUtils.getCurrentUser());
+        return getOne(queryWrapper);
     }
 
     /**
