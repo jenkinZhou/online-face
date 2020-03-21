@@ -26,4 +26,5 @@ public class MyQueryWrapper<T> extends QueryWrapper<T> {
     public static<T> MyQueryWrapper<T> query(){
         return new MyQueryWrapper<T>();
     }
+
 }

@@ -4,6 +4,7 @@ spring:
     driver-class-name: com.mysql.cj.jdbc.Driver
     username: jenkin
     password: ZhoujinJenkin@1995
+    type: com.alibaba.druid.pool.DruidDataSource
 mybatis-plus:
   type-aliases-package: com.jenkin.onlineface.users.entity,com.jenkin.onlineface.attachments.entity,com.jenkin.onlineface.questions.entity
   configuration:
@@ -13,4 +14,4 @@ mybatis-plus:
 server:
   servlet:
     context-path: /face
-
+  port: 8060

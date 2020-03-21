@@ -5,7 +5,7 @@
 于是就自己想了这么一个系统 起初只是想做一个刷java\**题的系统，后面设计的时候发现可以做成一个通用的刷题系统
 ，只需要定义类型就可以了 。
 
-swagger-ui地址：http://127.0.0.1:8080/face/swagger-ui.html
+swagger-ui地址：http://127.0.0.1:8060/face/swagger-ui.html
 
 接口编写规则:
 

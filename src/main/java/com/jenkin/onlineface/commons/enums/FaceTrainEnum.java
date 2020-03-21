@@ -1,7 +1,12 @@
 package com.jenkin.onlineface.commons.enums;
 
-public enum FaceTrainEnum {
+import com.jenkin.onlineface.commons.enums.exception.ExceptionEnum;
+import com.jenkin.onlineface.commons.exception.FaceException;
 
+public enum FaceTrainEnum {
+    /**
+     *
+     */
     FACE_TRAIN_TYPE_STAR("star","收藏类型","套题的类型为我收藏的题目"),
     FACE_TRAIN_TYPE_IGNORE("ignore","忽略类型","套题的类型为我忽略的题目"),
     FACE_TRAIN_TYPE_CHOOSE("choose","选择类型","套题的类型为我选择的类型的题目"),
@@ -45,5 +50,16 @@ public enum FaceTrainEnum {
 
     public void setDesc(String desc) {
         this.desc = desc;
+    }
+
+    /**
+     * 检查trainType
+     * @param trainType
+     */
+    public static void checkTrainType(String trainType){
+        if(!FACE_TRAIN_TYPE_CHOOSE.getCode().equals(trainType)&&
+                !FACE_TRAIN_TYPE_STAR.getCode().equals(trainType)){
+            throw new FaceException(ExceptionEnum.ERROR_PARAM_EXCEPTION,"类型错误！"+trainType);
+        }
     }
 }

@@ -4,6 +4,7 @@ import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.baomidou.mybatisplus.core.toolkit.CollectionUtils;
 import com.baomidou.mybatisplus.core.toolkit.Wrappers;
 import com.jenkin.onlineface.commons.config.MyQueryWrapper;
+import com.jenkin.onlineface.commons.enums.FaceTrainEnum;
 import com.jenkin.onlineface.commons.utils.CommonUtils;
 import com.jenkin.onlineface.users.entity.TrainQuestionsSuit;
 import com.jenkin.onlineface.users.entity.UserTrain;
@@ -39,9 +40,8 @@ public class TrainQuestionsSuitServiceImpl extends ServiceImpl<TrainQuestionsSui
      */
     @Override
     public UserTrainQuestionVO getCurrentUndoQuestionByType(String trainType) {
-        if (StringUtils.isEmpty(trainType)) {
-            return null;
-        }
+        FaceTrainEnum.checkTrainType(trainType);
+
         MyQueryWrapper<UserTrainQuestionVO> queryWrapper = MyQueryWrapper.query();
         queryWrapper
                 .eq(UserTrainQuestionVO.Fields.faceTrainType, trainType)
