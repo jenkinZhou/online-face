@@ -10,6 +10,7 @@ import io.swagger.annotations.ApiModelProperty;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
 import lombok.experimental.Accessors;
+import lombok.experimental.FieldNameConstants;
 
 /**
  * <p>
@@ -23,6 +24,7 @@ import lombok.experimental.Accessors;
 @EqualsAndHashCode(callSuper = false)
 @Accessors(chain = true)
 @TableName("face_question_types")
+@FieldNameConstants
 @ApiModel(value="QuestionTypes对象", description="")
 public class QuestionTypes extends Model<QuestionTypes> {
 

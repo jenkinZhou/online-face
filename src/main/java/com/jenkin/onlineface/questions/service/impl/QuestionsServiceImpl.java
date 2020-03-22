@@ -58,16 +58,21 @@ public class QuestionsServiceImpl extends ServiceImpl<QuestionsMapper, Questions
         if (!CollectionUtils.isEmpty(userQuestions)) {
             userQuestions.forEach(item->didIds.add(item.getFaceQuestionId()));
         }
-        Set<Integer> first = CommonUtils.getIntegers(filterQuestionFirstType);
-        Set<Integer> second = CommonUtils.getIntegers(filterQuestionSecondType);
-        Set<Integer> third = CommonUtils.getIntegers(filterQuestionThirdType);
-        Set<Integer> fourth = CommonUtils.getIntegers(filterQuestionFourthType);
+        List<Integer> first = CommonUtils.getIntegersList(filterQuestionFirstType);
+        List<Integer> second = CommonUtils.getIntegersList(filterQuestionSecondType);
+        List<Integer> third = CommonUtils.getIntegersList(filterQuestionThirdType);
+        List<Integer> fourth = CommonUtils.getIntegersList(filterQuestionFourthType);
+        Set<Integer> list1 = CommonUtils.getListByIndex(0, Integer.class, first, second, third, fourth);
+        Set<Integer> list2 = CommonUtils.getListByIndex(1,Integer.class,first,second,third,fourth);
+        Set<Integer> list3 = CommonUtils.getListByIndex(2,Integer.class,first,second,third,fourth);
+        Set<Integer> list4 = CommonUtils.getListByIndex(3,Integer.class,first,second,third,fourth);
+
         MyQueryWrapper<Questions> queryWrapper = MyQueryWrapper.query();
             queryWrapper.and(i ->
-                i.or().in(!CollectionUtils.isEmpty(first),"face_type_first", first)
-                .or().in(!CollectionUtils.isEmpty(second),"face_type_second", second)
-                .or().in(!CollectionUtils.isEmpty(third),"face_type_third", third)
-                .or().in(!CollectionUtils.isEmpty(fourth),"face_type_fourth", fourth)
+                i.or().in(!CollectionUtils.isEmpty(list1),"face_type_first",list1 )
+                .or().in(!CollectionUtils.isEmpty(list2),"face_type_second", list2)
+                .or().in(!CollectionUtils.isEmpty(list3),"face_type_third", list3)
+                .or().in(!CollectionUtils.isEmpty(list4),"face_type_fourth", list4)
         ).notIn(!CollectionUtils.isEmpty(didIds),"id", didIds)
                 .last(" order by rand() limit " + questionNum);
         return list(queryWrapper);

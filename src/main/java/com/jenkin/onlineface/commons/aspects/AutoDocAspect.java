@@ -77,7 +77,7 @@ public class AutoDocAspect {
 
     private void parseClassField(Set<String> temp, StringBuilder res, Class returnClass, String path) {
         if (returnClass != Object.class&&!temp.contains(returnClass.getName())) {
-            String note = getResultsByClass(returnClass, "当前类为接口 " + path + "  的返回参数");
+            String note = getResultsByClass(returnClass, "当前类为接口 " + path + "  的参数");
             res.append(note).append("\n\n\n\n").append("//---------------------------");
             temp.add(returnClass.getName());
         }
@@ -86,11 +86,12 @@ public class AutoDocAspect {
     private String getResultsByClass(Class<?> returnType,String note) {
 
         Field[] fields = returnType.getDeclaredFields();
-        StringBuilder responseStr = new StringBuilder("");
+        StringBuilder responseStr = new StringBuilder("import { Response } from 'src/app/bean/Response';\n\n");
+
         responseStr.append("//").append(note);
         responseStr.append("\n");
-        responseStr.append("export class ").append(returnType.getSimpleName()).append(" {\n");
-        responseStr.append("\n").append("\n").append("constructor(){};\n");
+        responseStr.append("export class ").append(returnType.getSimpleName()).append(" extends Response {\n");
+        responseStr.append("\n").append("\n").append("constructor(){super();};\n");
         for (Field field : fields) {
             if (field.isAnnotationPresent(ApiModelProperty.class)) {
                 ApiModelProperty property = field.getDeclaredAnnotation(ApiModelProperty.class);

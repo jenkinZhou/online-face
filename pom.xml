@@ -33,6 +33,8 @@
             <artifactId>mybatis-plus-generator</artifactId>
             <version>3.3.1.tmp</version>
         </dependency>
+
+
         <!-- https://mvnrepository.com/artifact/io.springfox/springfox-swagger-ui -->
         <dependency>
             <groupId>io.springfox</groupId>

@@ -19,6 +19,8 @@ import javax.annotation.Resource;
 import java.util.ArrayList;
 import java.util.List;
 
+import static com.jenkin.onlineface.commons.enums.FaceTrainEnum.FACE_TRAIN_RUNNING;
+
 /**
  * <p>
  *  服务实现类
@@ -46,12 +48,13 @@ public class TrainQuestionsSuitServiceImpl extends ServiceImpl<TrainQuestionsSui
         queryWrapper
                 .eq(UserTrainQuestionVO.Fields.faceTrainType, trainType)
                 .eq(UserTrainQuestionVO.Fields.userCode, CommonUtils.getCurrentUser())
+                .eq(UserTrainQuestionVO.Fields.faceTrainStatus,FACE_TRAIN_RUNNING.getCode())
                 .apply(" face_Train_Question_Index = face_Train_Question_Seq ");
         return trainQuestionsSuitMapper.getUserTrainQuestionSuit(queryWrapper);
     }
 
     /**
-     * 获取用户当前类型正在进行的一道未完成的题目
+     * 获取用户当前类型正在进行的上一道未完成的题目
      *
      * @param trainType
      * @return
@@ -63,7 +66,7 @@ public class TrainQuestionsSuitServiceImpl extends ServiceImpl<TrainQuestionsSui
     }
 
     /**
-     * 获取用户当前类型正在进行的一道未完成的题目
+     * 获取用户当前类型正在进行的下一道未完成的题目
      *
      * @param trainType
      * @return
@@ -89,6 +92,7 @@ public class TrainQuestionsSuitServiceImpl extends ServiceImpl<TrainQuestionsSui
         queryWrapper
                 .eq(UserTrainQuestionVO.Fields.faceTrainType, trainType)
                 .eq(UserTrainQuestionVO.Fields.userCode, CommonUtils.getCurrentUser())
+                .eq(UserTrainQuestionVO.Fields.faceTrainStatus,FACE_TRAIN_RUNNING.getCode())
                 .eq(UserTrainQuestionVO.Fields.faceTrainQuestionSeq,index);
         return trainQuestionsSuitMapper.getUserTrainQuestionSuit(queryWrapper);
     }
@@ -107,6 +111,7 @@ public class TrainQuestionsSuitServiceImpl extends ServiceImpl<TrainQuestionsSui
         MyQueryWrapper<UserTrainQuestionVO> queryWrapper = MyQueryWrapper.query();
         queryWrapper
                 .eq(UserTrainQuestionVO.Fields.faceTrainType, trainType)
+                .eq(UserTrainQuestionVO.Fields.faceTrainStatus,FACE_TRAIN_RUNNING.getCode())
                 .eq(UserTrainQuestionVO.Fields.userCode, CommonUtils.getCurrentUser())
                 .isNull(UserTrainQuestionVO.Fields.faceTrainPass)
                 .orderByAsc(UserTrainQuestionVO.Fields.faceTrainQuestionSeq);
