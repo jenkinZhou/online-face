@@ -62,10 +62,10 @@ public class QuestionsServiceImpl extends ServiceImpl<QuestionsMapper, Questions
         List<Integer> second = CommonUtils.getIntegersList(filterQuestionSecondType);
         List<Integer> third = CommonUtils.getIntegersList(filterQuestionThirdType);
         List<Integer> fourth = CommonUtils.getIntegersList(filterQuestionFourthType);
-        Set<Integer> list1 = CommonUtils.getListByIndex(0, Integer.class, first, second, third, fourth);
-        Set<Integer> list2 = CommonUtils.getListByIndex(1,Integer.class,first,second,third,fourth);
-        Set<Integer> list3 = CommonUtils.getListByIndex(2,Integer.class,first,second,third,fourth);
-        Set<Integer> list4 = CommonUtils.getListByIndex(3,Integer.class,first,second,third,fourth);
+        Set<Integer> list1 = getCategoryIdByLevel(1,first,second,third,fourth);
+        Set<Integer> list2 = getCategoryIdByLevel(2,first,second,third,fourth);
+        Set<Integer> list3 = getCategoryIdByLevel(3,first,second,third,fourth);
+        Set<Integer> list4 = getCategoryIdByLevel(4,first,second,third,fourth);
 
         MyQueryWrapper<Questions> queryWrapper = MyQueryWrapper.query();
             queryWrapper.and(i ->
@@ -76,6 +76,21 @@ public class QuestionsServiceImpl extends ServiceImpl<QuestionsMapper, Questions
         ).notIn(!CollectionUtils.isEmpty(didIds),"id", didIds)
                 .last(" order by rand() limit " + questionNum);
         return list(queryWrapper);
+    }
+
+    @SafeVarargs
+    /**
+     * 获取对应等级的分类
+     */
+    private final Set<Integer> getCategoryIdByLevel(int i, List<Integer>... types) {
+        Set<Integer> res = new HashSet<>();
+        for (List<Integer> type : types) {
+            if(i>0&&type.size()==i){
+                res.add(type.get(i-1));
+            }
+
+        }
+        return res;
     }
 
 
