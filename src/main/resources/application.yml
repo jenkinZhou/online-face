@@ -4,6 +4,18 @@ spring:
     driver-class-name: com.mysql.cj.jdbc.Driver
     username: jenkin
     password: ZhoujinJenkin@1995
+    hikari:
+      connection-test-query: SELECT 1
+      idle-timeout: 1800000
+      minimum-idle: 1
+      maximum-pool-size: 10
+      max-lifetime: -1
+
+#    type: com.alibaba.druid.pool.DruidDataSource
+#    druid:
+#      test-while-idle: true
+#      validation-query: select 'X'
+#      timeBetweenEvictionRunsMillis: 3600000
 mybatis-plus:
   type-aliases-package: com.jenkin.onlineface.users.entity,com.jenkin.onlineface.attachments.entity,com.jenkin.onlineface.questions.entity
   configuration:
@@ -13,4 +25,4 @@ mybatis-plus:
 server:
   servlet:
     context-path: /face
-
+  port: 8060

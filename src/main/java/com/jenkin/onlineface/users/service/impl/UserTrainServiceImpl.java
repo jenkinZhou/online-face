@@ -4,6 +4,7 @@ import com.baomidou.mybatisplus.core.conditions.Wrapper;
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.baomidou.mybatisplus.core.toolkit.Wrappers;
 import com.jenkin.onlineface.commons.config.MyQueryWrapper;
+import com.jenkin.onlineface.commons.enums.FaceTrainEnum;
 import com.jenkin.onlineface.commons.enums.exception.ExceptionEnum;
 import com.jenkin.onlineface.commons.exception.FaceException;
 import com.jenkin.onlineface.commons.utils.CommonUtils;
@@ -117,10 +118,8 @@ public class UserTrainServiceImpl extends ServiceImpl<UserTrainMapper, UserTrain
     @Override
     public UserTrain getCurrentUserTrainByType(String trainType) {
 
-        if(!FACE_TRAIN_TYPE_CHOOSE.getCode().equals(trainType)&&
-            !FACE_TRAIN_TYPE_STAR.getCode().equals(trainType)){
-            throw new FaceException(ExceptionEnum.ERROR_PARAM_EXCEPTION,"类型错误！"+trainType);
-        }
+
+        FaceTrainEnum.checkTrainType(trainType);
 
         MyQueryWrapper<UserTrain> queryWrapper = MyQueryWrapper.query();
         queryWrapper
