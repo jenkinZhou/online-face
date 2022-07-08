@@ -1,1 +1,336 @@
-<mxfile host="app.diagrams.net" modified="2022-07-08T11:09:16.311Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.0.0 Safari/537.36" version="20.0.4" etag="98i7LkbDWLWZohNRwyx7" type="github"><diagram id="ChmMsIod3tCsNUJWoZxR">UzV2zq1wL0osyPDNT0nNUTV2VTV2LsrPL4GwciucU3NyVI0MMlNUjV1UjYwMgFjVyA2HrCFY1qAgsSg1rwSLBiADYTaQg2Y1AA==</diagram></mxfile>
+<mxfile host="app.diagrams.net" modified="2022-07-08T12:31:03.687Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.0.0 Safari/537.36" etag="rwH1rnxqgHRP0-jfU_TE" version="20.0.4" type="github">
+  <diagram id="ChmMsIod3tCsNUJWoZxR" name="第 1 页">
+    <mxGraphModel dx="2291" dy="1247" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="A4POK8aQmIe4rK7fTXl5-67" value="" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="110" y="40" width="720" height="1110" as="geometry" />
+        </mxCell>
+        <mxCell id="A4POK8aQmIe4rK7fTXl5-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.25;entryDx=0;entryDy=0;" edge="1" parent="1" source="A4POK8aQmIe4rK7fTXl5-2" target="A4POK8aQmIe4rK7fTXl5-3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="A4POK8aQmIe4rK7fTXl5-2" value="candidate 发起投票&lt;br&gt;说我想要当leader" style="verticalLabelPosition=bottom;verticalAlign=top;html=1;shape=mxgraph.flowchart.on-page_reference;" vertex="1" parent="1">
+          <mxGeometry x="180" y="100" width="60" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="A4POK8aQmIe4rK7fTXl5-3" value="" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="340" y="110" width="450" height="1010" as="geometry" />
+        </mxCell>
+        <mxCell id="A4POK8aQmIe4rK7fTXl5-7" value="传递参数：&lt;br&gt;term ：当前任期&lt;br&gt;candidateId：我是谁，自己的ID&lt;br&gt;lastLogIndex：我的最新的日志索引&lt;br&gt;lastLogTerm：我的最新的日志任期&lt;span style=&quot;white-space: pre;&quot;&gt;	&lt;/span&gt;" style="text;html=1;align=left;verticalAlign=top;whiteSpace=wrap;rounded=0;fillColor=#f5f5f5;fontColor=#333333;strokeColor=#666666;" vertex="1" parent="1">
+          <mxGeometry x="120" y="220" width="200" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="A4POK8aQmIe4rK7fTXl5-17" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="A4POK8aQmIe4rK7fTXl5-10" target="A4POK8aQmIe4rK7fTXl5-13">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="A4POK8aQmIe4rK7fTXl5-21" value="否" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="A4POK8aQmIe4rK7fTXl5-17">
+          <mxGeometry x="-0.2593" y="-1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="A4POK8aQmIe4rK7fTXl5-29" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="A4POK8aQmIe4rK7fTXl5-10" target="A4POK8aQmIe4rK7fTXl5-28">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="A4POK8aQmIe4rK7fTXl5-35" value="是" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="A4POK8aQmIe4rK7fTXl5-29">
+          <mxGeometry x="-0.9217" y="2" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="A4POK8aQmIe4rK7fTXl5-10" value="判断候选者的任期是不是比自己小" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.decision;whiteSpace=wrap;spacingLeft=0;spacingRight=0;spacingTop=0;spacing=20;" vertex="1" parent="1">
+          <mxGeometry x="387.5" y="240" width="130" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="A4POK8aQmIe4rK7fTXl5-12" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="A4POK8aQmIe4rK7fTXl5-11" target="A4POK8aQmIe4rK7fTXl5-10">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="A4POK8aQmIe4rK7fTXl5-11" value="开始" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.start_1;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="402.5" y="120" width="100" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="A4POK8aQmIe4rK7fTXl5-18" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="A4POK8aQmIe4rK7fTXl5-13" target="A4POK8aQmIe4rK7fTXl5-15">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="A4POK8aQmIe4rK7fTXl5-22" value="否" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="A4POK8aQmIe4rK7fTXl5-18">
+          <mxGeometry x="-0.3333" y="2" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="A4POK8aQmIe4rK7fTXl5-30" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="A4POK8aQmIe4rK7fTXl5-13" target="A4POK8aQmIe4rK7fTXl5-28">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="A4POK8aQmIe4rK7fTXl5-47" value="是" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="A4POK8aQmIe4rK7fTXl5-30">
+          <mxGeometry x="-0.9418" y="-1" relative="1" as="geometry">
+            <mxPoint x="14" y="-1" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="A4POK8aQmIe4rK7fTXl5-13" value="判断自己有没有给别的候选者投过票" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.decision;whiteSpace=wrap;spacingLeft=0;spacingRight=0;spacingTop=0;spacing=20;" vertex="1" parent="1">
+          <mxGeometry x="387.5" y="360" width="130" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="A4POK8aQmIe4rK7fTXl5-20" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="A4POK8aQmIe4rK7fTXl5-14" target="A4POK8aQmIe4rK7fTXl5-16">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="A4POK8aQmIe4rK7fTXl5-24" value="否" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="A4POK8aQmIe4rK7fTXl5-20">
+          <mxGeometry x="-0.1933" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="A4POK8aQmIe4rK7fTXl5-32" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="A4POK8aQmIe4rK7fTXl5-14" target="A4POK8aQmIe4rK7fTXl5-28">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="A4POK8aQmIe4rK7fTXl5-38" value="是" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="A4POK8aQmIe4rK7fTXl5-32">
+          <mxGeometry x="-0.7928" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="A4POK8aQmIe4rK7fTXl5-14" value="判断候选者的轮次或者索引是否小于我自己的轮次或者索引" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.decision;whiteSpace=wrap;spacingLeft=0;spacingRight=0;spacingTop=0;spacing=20;" vertex="1" parent="1">
+          <mxGeometry x="380" y="610" width="145" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="A4POK8aQmIe4rK7fTXl5-19" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="A4POK8aQmIe4rK7fTXl5-15" target="A4POK8aQmIe4rK7fTXl5-14">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="A4POK8aQmIe4rK7fTXl5-23" value="否" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="A4POK8aQmIe4rK7fTXl5-19">
+          <mxGeometry x="-0.2848" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="A4POK8aQmIe4rK7fTXl5-31" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="A4POK8aQmIe4rK7fTXl5-15">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="700" y="940" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="A4POK8aQmIe4rK7fTXl5-66" value="是" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="A4POK8aQmIe4rK7fTXl5-31">
+          <mxGeometry x="-0.8612" y="3" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="A4POK8aQmIe4rK7fTXl5-15" value="判断自己是不是leader" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.decision;whiteSpace=wrap;spacingLeft=0;spacingRight=0;spacingTop=0;spacing=20;" vertex="1" parent="1">
+          <mxGeometry x="387.5" y="480" width="130" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="A4POK8aQmIe4rK7fTXl5-26" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="A4POK8aQmIe4rK7fTXl5-16" target="A4POK8aQmIe4rK7fTXl5-25">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="A4POK8aQmIe4rK7fTXl5-27" value="否" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="A4POK8aQmIe4rK7fTXl5-26">
+          <mxGeometry x="-0.2392" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="A4POK8aQmIe4rK7fTXl5-51" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="A4POK8aQmIe4rK7fTXl5-16" target="A4POK8aQmIe4rK7fTXl5-50">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="A4POK8aQmIe4rK7fTXl5-65" value="是" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="A4POK8aQmIe4rK7fTXl5-51">
+          <mxGeometry x="0.0037" y="-4" relative="1" as="geometry">
+            <mxPoint x="-12" y="-4" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="A4POK8aQmIe4rK7fTXl5-16" value="判断是否是重复投票" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.decision;whiteSpace=wrap;spacingLeft=0;spacingRight=0;spacingTop=0;spacing=20;" vertex="1" parent="1">
+          <mxGeometry x="387.5" y="750" width="130" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="A4POK8aQmIe4rK7fTXl5-54" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="A4POK8aQmIe4rK7fTXl5-25" target="A4POK8aQmIe4rK7fTXl5-53">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="A4POK8aQmIe4rK7fTXl5-25" value="记录votedfor，currentTerm，并且返回成功" style="whiteSpace=wrap;html=1;strokeWidth=2;spacingLeft=0;spacingRight=0;spacingTop=0;spacing=20;" vertex="1" parent="1">
+          <mxGeometry x="392.5" y="901" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="A4POK8aQmIe4rK7fTXl5-59" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="A4POK8aQmIe4rK7fTXl5-28" target="A4POK8aQmIe4rK7fTXl5-57">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="A4POK8aQmIe4rK7fTXl5-28" value="投票失败，返回false和当前的任期" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="640" y="870" width="120" height="74" as="geometry" />
+        </mxCell>
+        <mxCell id="A4POK8aQmIe4rK7fTXl5-43" value="如果任期比自己小，说明已经开启了新的一轮投票了，当前投票作废" style="text;html=1;strokeColor=#d6b656;fillColor=#fff2cc;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="610" y="240" width="130" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="A4POK8aQmIe4rK7fTXl5-44" value="每个候选者只能的一票，如果我投给过别人了就不能给你投票了" style="text;html=1;strokeColor=#d6b656;fillColor=#fff2cc;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="610.5" y="360" width="130" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="A4POK8aQmIe4rK7fTXl5-48" value="如果我已经是leader了，那么说明投票已经得到大多数统一，完成了" style="text;html=1;strokeColor=#d6b656;fillColor=#fff2cc;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="610" y="490" width="130" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="A4POK8aQmIe4rK7fTXl5-49" value="如果我的最新的日志比你的最新的日志新，说明你应该没有被当选的资格" style="text;html=1;strokeColor=#d6b656;fillColor=#fff2cc;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="612" y="625" width="130" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="A4POK8aQmIe4rK7fTXl5-63" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="A4POK8aQmIe4rK7fTXl5-50" target="A4POK8aQmIe4rK7fTXl5-62">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="A4POK8aQmIe4rK7fTXl5-50" value="如果我已经给你投过票了就不用在重复的投票了" style="text;html=1;strokeColor=#d6b656;fillColor=#fff2cc;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="517.5" y="810" width="130" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="A4POK8aQmIe4rK7fTXl5-58" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="A4POK8aQmIe4rK7fTXl5-53" target="A4POK8aQmIe4rK7fTXl5-57">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="A4POK8aQmIe4rK7fTXl5-53" value="重置投票超时定时器" style="whiteSpace=wrap;html=1;strokeWidth=2;spacingLeft=0;spacingRight=0;spacingTop=0;spacing=20;" vertex="1" parent="1">
+          <mxGeometry x="392.5" y="1000" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="A4POK8aQmIe4rK7fTXl5-57" value="持久化数据并结束" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.terminator;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="650" y="1000" width="100" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="A4POK8aQmIe4rK7fTXl5-64" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="A4POK8aQmIe4rK7fTXl5-62" target="A4POK8aQmIe4rK7fTXl5-57">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="A4POK8aQmIe4rK7fTXl5-62" value="记录votedfor，currentTerm，并且返回成功" style="whiteSpace=wrap;html=1;strokeWidth=2;spacingLeft=0;spacingRight=0;spacingTop=0;spacing=20;" vertex="1" parent="1">
+          <mxGeometry x="536.25" y="893" width="92.5" height="67" as="geometry" />
+        </mxCell>
+        <mxCell id="A4POK8aQmIe4rK7fTXl5-68" value="投票选举" style="text;strokeColor=none;fillColor=none;html=1;fontSize=24;fontStyle=1;verticalAlign=middle;align=center;" vertex="1" parent="1">
+          <mxGeometry x="393" y="50" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="A4POK8aQmIe4rK7fTXl5-69" value="" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="952.5" y="20" width="720" height="1170" as="geometry" />
+        </mxCell>
+        <mxCell id="A4POK8aQmIe4rK7fTXl5-70" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.25;entryDx=0;entryDy=0;" edge="1" parent="1" source="A4POK8aQmIe4rK7fTXl5-71" target="A4POK8aQmIe4rK7fTXl5-72">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="A4POK8aQmIe4rK7fTXl5-71" value="LEADER发送AppendEntries&lt;br&gt;请求给到flower" style="verticalLabelPosition=bottom;verticalAlign=top;html=1;shape=mxgraph.flowchart.on-page_reference;" vertex="1" parent="1">
+          <mxGeometry x="1030" y="80" width="60" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="A4POK8aQmIe4rK7fTXl5-72" value="" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1190" y="90" width="450" height="1080" as="geometry" />
+        </mxCell>
+        <mxCell id="A4POK8aQmIe4rK7fTXl5-73" value="传递参数：&lt;br&gt;leaderId：LEADER的ID&lt;br&gt;currentTerm ：当前任期&lt;br&gt;leaderCommit：LEADER的以及提交的日志索引&lt;br&gt;entries：将要发送的日志记录&lt;br&gt;prevLogIndex：前驱日志索引prevLogTerm：前驱日志任期&lt;span style=&quot;white-space: pre;&quot;&gt;	&lt;/span&gt;" style="text;html=1;align=left;verticalAlign=top;whiteSpace=wrap;rounded=0;fillColor=#f5f5f5;fontColor=#333333;strokeColor=#666666;" vertex="1" parent="1">
+          <mxGeometry x="970" y="200" width="200" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="A4POK8aQmIe4rK7fTXl5-121" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="A4POK8aQmIe4rK7fTXl5-78" target="A4POK8aQmIe4rK7fTXl5-120">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1303" y="320" />
+              <mxPoint x="1303" y="320" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="A4POK8aQmIe4rK7fTXl5-151" value="否" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="A4POK8aQmIe4rK7fTXl5-121">
+          <mxGeometry x="-0.2041" y="-1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="A4POK8aQmIe4rK7fTXl5-149" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1364.5" y="255" as="sourcePoint" />
+            <mxPoint x="1547" y="880" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="1607" y="255" />
+              <mxPoint x="1607" y="880" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="A4POK8aQmIe4rK7fTXl5-150" value="是" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="A4POK8aQmIe4rK7fTXl5-149">
+          <mxGeometry x="-0.8703" y="-1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="A4POK8aQmIe4rK7fTXl5-78" value="判断leader的任期是不是比自己小" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.decision;whiteSpace=wrap;spacingLeft=0;spacingRight=0;spacingTop=0;spacing=20;" vertex="1" parent="1">
+          <mxGeometry x="1237.5" y="220" width="130" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="A4POK8aQmIe4rK7fTXl5-79" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="A4POK8aQmIe4rK7fTXl5-80" target="A4POK8aQmIe4rK7fTXl5-78">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="A4POK8aQmIe4rK7fTXl5-80" value="开始" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.start_1;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="1252.5" y="100" width="100" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="A4POK8aQmIe4rK7fTXl5-116" value="心跳&amp;amp;日志复制" style="text;strokeColor=none;fillColor=none;html=1;fontSize=24;fontStyle=1;verticalAlign=middle;align=center;" vertex="1" parent="1">
+          <mxGeometry x="1262.5" y="30" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="A4POK8aQmIe4rK7fTXl5-123" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="A4POK8aQmIe4rK7fTXl5-120" target="A4POK8aQmIe4rK7fTXl5-122">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="A4POK8aQmIe4rK7fTXl5-120" value="切换为flower，同时如果轮次相等则重置选举定时器" style="rounded=1;whiteSpace=wrap;html=1;strokeWidth=2;spacingLeft=0;spacingRight=0;spacingTop=0;spacing=3;" vertex="1" parent="1">
+          <mxGeometry x="1246.25" y="350" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="A4POK8aQmIe4rK7fTXl5-125" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="A4POK8aQmIe4rK7fTXl5-122" target="A4POK8aQmIe4rK7fTXl5-124">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="A4POK8aQmIe4rK7fTXl5-152" value="否" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="A4POK8aQmIe4rK7fTXl5-125">
+          <mxGeometry x="-0.2156" y="1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="A4POK8aQmIe4rK7fTXl5-131" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="A4POK8aQmIe4rK7fTXl5-122" target="A4POK8aQmIe4rK7fTXl5-130">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="A4POK8aQmIe4rK7fTXl5-153" value="是" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="A4POK8aQmIe4rK7fTXl5-131">
+          <mxGeometry x="-0.1428" y="-1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="A4POK8aQmIe4rK7fTXl5-122" value="判断被发送过来的日志的前驱位置是不是比自己的位置大" style="rhombus;whiteSpace=wrap;html=1;rounded=1;strokeWidth=2;spacingLeft=0;spacingRight=0;spacingTop=20;spacing=20;spacingBottom=20;" vertex="1" parent="1">
+          <mxGeometry x="1238.75" y="460" width="127.5" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="A4POK8aQmIe4rK7fTXl5-135" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="A4POK8aQmIe4rK7fTXl5-124" target="A4POK8aQmIe4rK7fTXl5-134">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="A4POK8aQmIe4rK7fTXl5-154" value="否" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="A4POK8aQmIe4rK7fTXl5-135">
+          <mxGeometry x="-0.2298" y="-1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="A4POK8aQmIe4rK7fTXl5-141" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="A4POK8aQmIe4rK7fTXl5-124" target="A4POK8aQmIe4rK7fTXl5-137">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="A4POK8aQmIe4rK7fTXl5-155" value="是" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="A4POK8aQmIe4rK7fTXl5-141">
+          <mxGeometry x="-0.2267" y="-1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="A4POK8aQmIe4rK7fTXl5-124" value="判断我的日志中 prevLogIndex里面的term和传过来的prevLogTerm是不是一样的" style="rhombus;whiteSpace=wrap;html=1;rounded=1;strokeWidth=2;spacingLeft=0;spacingRight=0;spacingTop=20;spacing=20;spacingBottom=20;" vertex="1" parent="1">
+          <mxGeometry x="1228.75" y="625" width="147.5" height="125" as="geometry" />
+        </mxCell>
+        <mxCell id="A4POK8aQmIe4rK7fTXl5-129" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="A4POK8aQmIe4rK7fTXl5-126" target="A4POK8aQmIe4rK7fTXl5-128">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="A4POK8aQmIe4rK7fTXl5-126" value="把自己的leaderId设置为参数里面的leaderId" style="whiteSpace=wrap;html=1;rounded=1;strokeWidth=2;spacingLeft=0;spacingRight=0;spacingTop=0;spacing=2;spacingBottom=0;" vertex="1" parent="1">
+          <mxGeometry x="1242.5" y="893" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="A4POK8aQmIe4rK7fTXl5-158" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="A4POK8aQmIe4rK7fTXl5-128" target="A4POK8aQmIe4rK7fTXl5-145">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="A4POK8aQmIe4rK7fTXl5-159" value="否" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="A4POK8aQmIe4rK7fTXl5-158">
+          <mxGeometry x="0.214" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="A4POK8aQmIe4rK7fTXl5-160" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="A4POK8aQmIe4rK7fTXl5-128" target="A4POK8aQmIe4rK7fTXl5-143">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="A4POK8aQmIe4rK7fTXl5-161" value="是" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="A4POK8aQmIe4rK7fTXl5-160">
+          <mxGeometry x="-0.1434" y="-2" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="A4POK8aQmIe4rK7fTXl5-128" value="判断leader已经提交的日志是不是大于我已经提交的日志索引" style="rhombus;whiteSpace=wrap;html=1;rounded=1;strokeWidth=2;spacingLeft=0;spacingRight=0;spacingTop=0;spacing=2;spacingBottom=0;" vertex="1" parent="1">
+          <mxGeometry x="1248.75" y="984" width="107.5" height="107" as="geometry" />
+        </mxCell>
+        <mxCell id="A4POK8aQmIe4rK7fTXl5-148" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="A4POK8aQmIe4rK7fTXl5-130" target="A4POK8aQmIe4rK7fTXl5-145">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="A4POK8aQmIe4rK7fTXl5-130" value="设置返回结果中下一个呀发送的索引为自己的日志索引" style="whiteSpace=wrap;html=1;rounded=1;strokeWidth=2;spacingLeft=0;spacingRight=0;spacingTop=0;spacing=0;spacingBottom=0;" vertex="1" parent="1">
+          <mxGeometry x="1466.88" y="485" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="A4POK8aQmIe4rK7fTXl5-147" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="A4POK8aQmIe4rK7fTXl5-134" target="A4POK8aQmIe4rK7fTXl5-145">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="A4POK8aQmIe4rK7fTXl5-134" value="返回结果告诉leader日志也发生了错位，需要找到一个匹配的日志的位置，重新复制，并且告诉leader冲突位置的任期和索引" style="whiteSpace=wrap;html=1;rounded=1;strokeWidth=2;spacingLeft=0;spacingRight=0;spacingTop=0;spacing=0;spacingBottom=0;" vertex="1" parent="1">
+          <mxGeometry x="1420" y="646.25" width="160" height="82.5" as="geometry" />
+        </mxCell>
+        <mxCell id="A4POK8aQmIe4rK7fTXl5-142" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="A4POK8aQmIe4rK7fTXl5-137" target="A4POK8aQmIe4rK7fTXl5-126">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="A4POK8aQmIe4rK7fTXl5-137" value="把日志追加到自己" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1242.5" y="800" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="A4POK8aQmIe4rK7fTXl5-146" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="A4POK8aQmIe4rK7fTXl5-143" target="A4POK8aQmIe4rK7fTXl5-145">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="A4POK8aQmIe4rK7fTXl5-143" value="更新我的commitIndex，设置为leader的CommitIndex和我的日志里面最新的索引中最小的一个" style="whiteSpace=wrap;html=1;rounded=1;strokeWidth=2;spacingLeft=0;spacingRight=0;spacingTop=0;spacing=2;spacingBottom=0;" vertex="1" parent="1">
+          <mxGeometry x="1423.13" y="994.75" width="153.75" height="85.5" as="geometry" />
+        </mxCell>
+        <mxCell id="A4POK8aQmIe4rK7fTXl5-145" value="结束" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.terminator;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="1450" y="850" width="100" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="A4POK8aQmIe4rK7fTXl5-162" value="说明了新的选举开始了，当前leader已经作废" style="text;html=1;strokeColor=#d6b656;fillColor=#fff2cc;align=left;verticalAlign=top;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="1470" y="210" width="120" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="A4POK8aQmIe4rK7fTXl5-163" value="说明leader的日志太新了，我的日志还不够新，需要从leader同步" style="text;html=1;strokeColor=#d6b656;fillColor=#fff2cc;align=left;verticalAlign=top;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="1460" y="410" width="120" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="A4POK8aQmIe4rK7fTXl5-164" value="说明网络条件太差，leader选举的过程频繁，导致日志记录混乱，需要重新从leader同步" style="text;html=1;strokeColor=#d6b656;fillColor=#fff2cc;align=left;verticalAlign=top;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="1420" y="570" width="160" height="70" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
