@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2022-07-25T01:37:48.261Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.60 Safari/537.36" etag="G1js7ykIqXAFiQQzKqoi" version="20.1.4" type="github">
+<mxfile host="app.diagrams.net" modified="2022-07-25T06:23:33.114Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.60 Safari/537.36" etag="PcV1KiRRRM5VN98UE80E" version="20.1.4" type="github">
   <diagram id="qRgSkZ1m7w0oscVlsJi2" name="第 1 页">
-    <mxGraphModel dx="1415" dy="971" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1851" dy="1269" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -184,6 +184,38 @@
         </mxCell>
         <mxCell id="kqyRtx0JfChElpCiszqf-76" value="根据BeanDefinition里面的信息判断需要注册哪些后置处理器，例如有@Autowire注解则需要注册AutowiredAnnotationBeanPostProcessor&lt;br&gt;有@configuration 则需要注册ConfigurationClassPostProcessor&lt;br&gt;等等之类的&lt;br&gt;这些后置处理器将会在创建bean实例的时候被调用" style="whiteSpace=wrap;html=1;fontFamily=Comic Sans MS;align=left;fillColor=#dae8fc;strokeColor=#6c8ebf;rounded=1;strokeWidth=2;fillWeight=4;hachureGap=8;hachureAngle=45;sketch=1;shadow=0;glass=0;" parent="1" vertex="1">
           <mxGeometry x="1350" y="930" width="250" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="1ompkj2hWSB-YoC1AE3v-1" value="" style="rounded=1;whiteSpace=wrap;html=1;fontFamily=Comic Sans MS;align=left;verticalAlign=top;" vertex="1" parent="1">
+          <mxGeometry x="126.25" y="1300" width="1243.75" height="380" as="geometry" />
+        </mxCell>
+        <mxCell id="1ompkj2hWSB-YoC1AE3v-2" value="自动装配的流程" style="text;strokeColor=none;fillColor=none;html=1;fontSize=24;fontStyle=1;verticalAlign=middle;align=center;fontFamily=Comic Sans MS;" vertex="1" parent="1">
+          <mxGeometry x="650" y="1320" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="1ompkj2hWSB-YoC1AE3v-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;fontFamily=Comic Sans MS;curved=1;" edge="1" parent="1" source="1ompkj2hWSB-YoC1AE3v-3" target="kqyRtx0JfChElpCiszqf-76">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="925" y="1280" />
+              <mxPoint x="1475" y="1280" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="1ompkj2hWSB-YoC1AE3v-3" value="在前面的解析自定义标签的时候会有一个地方注册beanPostProcesser，根据这些PostProcesser的名称可以得知是在实例化的过程中会被调用的，其中有两个PostProcesser，CommonAnnotationBeanPostProcessor，AutowiredAnnotationBeanPostProcessor，这两个注解分别负责了@Resource自动装配和@Autowire自动装配" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontFamily=Comic Sans MS;" vertex="1" parent="1">
+          <mxGeometry x="150" y="1390" width="1310" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="1ompkj2hWSB-YoC1AE3v-8" value="" style="edgeStyle=orthogonalEdgeStyle;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontFamily=Comic Sans MS;fontSize=21;" edge="1" parent="1" source="1ompkj2hWSB-YoC1AE3v-6" target="1ompkj2hWSB-YoC1AE3v-7">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="1ompkj2hWSB-YoC1AE3v-6" value="&lt;b&gt;&lt;font style=&quot;font-size: 21px;&quot;&gt;第一步：收集阶段&lt;br&gt;&lt;/font&gt;&lt;/b&gt;&lt;br&gt;通过后置处理器（对应方法：postProcessMergedBeanDefinition），收集类中带有@Autowire或者带有@Resource等等注解的属性或者方法，并且将其封装到PostProcesser里面的injectionMetadataCache缓存里面" style="rounded=1;whiteSpace=wrap;html=1;strokeWidth=2;fillWeight=4;hachureGap=8;hachureAngle=45;fillColor=#dae8fc;sketch=1;fontFamily=Comic Sans MS;strokeColor=#6c8ebf;align=left;verticalAlign=top;spacing=12;" vertex="1" parent="1">
+          <mxGeometry x="330" y="1465" width="360" height="150" as="geometry" />
+        </mxCell>
+        <mxCell id="1ompkj2hWSB-YoC1AE3v-7" value="&lt;b&gt;&lt;font style=&quot;font-size: 21px;&quot;&gt;第二步：依赖注入阶段&lt;br&gt;&lt;/font&gt;&lt;/b&gt;&lt;br&gt;在第一步中，已经收集到了类里面带有@Autowire或者带有@Resource属性的属性或者方法了，那现在需要对这些属性进行赋值，或者方法进行调用，因此通过调用后置处理器的postProcessProperties方法，完成依赖注入的过程，对于属性的赋值，将会递归的调用getBean方法" style="rounded=1;whiteSpace=wrap;html=1;strokeWidth=2;fillWeight=4;hachureGap=8;hachureAngle=45;fillColor=#dae8fc;sketch=1;fontFamily=Comic Sans MS;strokeColor=#6c8ebf;align=left;verticalAlign=top;spacing=12;" vertex="1" parent="1">
+          <mxGeometry x="770" y="1465" width="360" height="150" as="geometry" />
+        </mxCell>
+        <mxCell id="1ompkj2hWSB-YoC1AE3v-10" value="" style="rounded=1;whiteSpace=wrap;html=1;fontFamily=Comic Sans MS;align=left;verticalAlign=top;" vertex="1" parent="1">
+          <mxGeometry x="90" y="1730" width="1243.75" height="380" as="geometry" />
+        </mxCell>
+        <mxCell id="1ompkj2hWSB-YoC1AE3v-11" value="Bean实例化的过程" style="text;strokeColor=none;fillColor=none;html=1;fontSize=24;fontStyle=1;verticalAlign=middle;align=center;fontFamily=Comic Sans MS;" vertex="1" parent="1">
+          <mxGeometry x="640" y="1754" width="100" height="40" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
