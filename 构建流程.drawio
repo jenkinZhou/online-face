@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2022-08-18T02:13:10.246Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.0.0 Safari/537.36" etag="G1rIALSGFNwQuoFM5kfH" version="20.2.4" type="github">
+<mxfile host="app.diagrams.net" modified="2022-08-18T02:15:09.587Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.0.0 Safari/537.36" etag="ET6EdzBzZ8bHbQGWsUX-" version="20.2.4" type="github">
   <diagram id="SRiQYdSl_FmvriVkVRbi" name="第 1 页">
-    <mxGraphModel dx="1185" dy="635" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" background="none" math="0" shadow="0">
+    <mxGraphModel dx="1185" dy="588" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" background="none" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -108,6 +108,112 @@
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="QMWGVBq8KqTVjCFAxsbk-28" value="构建完成或失败添加FINISH文件，删除BUILDING文件" style="whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;rounded=1;strokeWidth=2;fillWeight=4;hachureGap=8;hachureAngle=45;sketch=1;spacing=15;fontFamily=Comic Sans MS;" vertex="1" parent="1">
+          <mxGeometry x="790" y="970" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="QMWGVBq8KqTVjCFAxsbk-33" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;sketch=1;fontFamily=Comic Sans MS;" edge="1" parent="1" source="QMWGVBq8KqTVjCFAxsbk-34" target="QMWGVBq8KqTVjCFAxsbk-39">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="QMWGVBq8KqTVjCFAxsbk-34" value="构建Coverity项目" style="rounded=1;whiteSpace=wrap;html=1;strokeWidth=2;fillWeight=4;hachureGap=8;hachureAngle=45;fillColor=#d5e8d4;sketch=1;strokeColor=#82b366;fontFamily=Comic Sans MS;" vertex="1" parent="1">
+          <mxGeometry x="300" y="100" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="QMWGVBq8KqTVjCFAxsbk-35" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;sketch=1;fontFamily=Comic Sans MS;" edge="1" parent="1" source="QMWGVBq8KqTVjCFAxsbk-39" target="QMWGVBq8KqTVjCFAxsbk-45">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="QMWGVBq8KqTVjCFAxsbk-36" value="是" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];sketch=1;rounded=1;fontFamily=Comic Sans MS;" vertex="1" connectable="0" parent="QMWGVBq8KqTVjCFAxsbk-35">
+          <mxGeometry x="-0.2" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="QMWGVBq8KqTVjCFAxsbk-37" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;sketch=1;fontFamily=Comic Sans MS;" edge="1" parent="1" source="QMWGVBq8KqTVjCFAxsbk-39" target="QMWGVBq8KqTVjCFAxsbk-57">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="240" y="285" />
+              <mxPoint x="240" y="1000" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="QMWGVBq8KqTVjCFAxsbk-38" value="否" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];sketch=1;rounded=1;fontFamily=Comic Sans MS;" vertex="1" connectable="0" parent="QMWGVBq8KqTVjCFAxsbk-37">
+          <mxGeometry x="-0.2615" y="3" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="QMWGVBq8KqTVjCFAxsbk-39" value="使用app_id作为目录名称，判断工作目录是否存在" style="rhombus;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;rounded=1;strokeWidth=2;fillWeight=4;hachureGap=8;hachureAngle=45;sketch=1;spacing=15;fontFamily=Comic Sans MS;" vertex="1" parent="1">
+          <mxGeometry x="280" y="240" width="160" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="QMWGVBq8KqTVjCFAxsbk-40" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;sketch=1;fontFamily=Comic Sans MS;" edge="1" parent="1" source="QMWGVBq8KqTVjCFAxsbk-45" target="QMWGVBq8KqTVjCFAxsbk-50">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="QMWGVBq8KqTVjCFAxsbk-41" value="否" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];sketch=1;rounded=1;fontFamily=Comic Sans MS;" vertex="1" connectable="0" parent="QMWGVBq8KqTVjCFAxsbk-40">
+          <mxGeometry x="-0.2515" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="QMWGVBq8KqTVjCFAxsbk-42" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;sketch=1;fontFamily=Comic Sans MS;" edge="1" parent="1" source="QMWGVBq8KqTVjCFAxsbk-45" target="QMWGVBq8KqTVjCFAxsbk-53">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="QMWGVBq8KqTVjCFAxsbk-43" value="是" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];sketch=1;rounded=1;fontFamily=Comic Sans MS;" vertex="1" connectable="0" parent="QMWGVBq8KqTVjCFAxsbk-42">
+          <mxGeometry x="-0.367" y="-1" relative="1" as="geometry">
+            <mxPoint x="-46" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="QMWGVBq8KqTVjCFAxsbk-44" value="项目正在构建中，不允许重复构建" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];sketch=1;rounded=1;fontFamily=Comic Sans MS;" vertex="1" connectable="0" parent="QMWGVBq8KqTVjCFAxsbk-42">
+          <mxGeometry x="-0.159" y="-2" relative="1" as="geometry">
+            <mxPoint x="22" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="QMWGVBq8KqTVjCFAxsbk-45" value="判断是否存在目录下面是否存在构建中的文件（BULIDING）" style="rhombus;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;rounded=1;strokeWidth=2;fillWeight=4;hachureGap=8;hachureAngle=45;sketch=1;spacing=15;fontFamily=Comic Sans MS;" vertex="1" parent="1">
+          <mxGeometry x="284" y="420" width="155" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="QMWGVBq8KqTVjCFAxsbk-46" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;sketch=1;fontFamily=Comic Sans MS;" edge="1" parent="1" source="QMWGVBq8KqTVjCFAxsbk-50" target="QMWGVBq8KqTVjCFAxsbk-52">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="QMWGVBq8KqTVjCFAxsbk-47" value="是" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];sketch=1;rounded=1;fontFamily=Comic Sans MS;" vertex="1" connectable="0" parent="QMWGVBq8KqTVjCFAxsbk-46">
+          <mxGeometry x="-0.2205" y="3" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="QMWGVBq8KqTVjCFAxsbk-48" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;sketch=1;fontFamily=Comic Sans MS;" edge="1" parent="1" source="QMWGVBq8KqTVjCFAxsbk-50" target="QMWGVBq8KqTVjCFAxsbk-55">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="QMWGVBq8KqTVjCFAxsbk-49" value="否" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];sketch=1;rounded=1;fontFamily=Comic Sans MS;" vertex="1" connectable="0" parent="QMWGVBq8KqTVjCFAxsbk-48">
+          <mxGeometry x="0.3939" y="3" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="QMWGVBq8KqTVjCFAxsbk-50" value="判断是否存在构建完成的文件（FINISH）" style="rhombus;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;rounded=1;strokeWidth=2;fillWeight=4;hachureGap=8;hachureAngle=45;sketch=1;spacing=15;fontFamily=Comic Sans MS;" vertex="1" parent="1">
+          <mxGeometry x="287.25" y="610" width="148.5" height="95" as="geometry" />
+        </mxCell>
+        <mxCell id="QMWGVBq8KqTVjCFAxsbk-51" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;sketch=1;fontFamily=Comic Sans MS;" edge="1" parent="1" source="QMWGVBq8KqTVjCFAxsbk-52" target="QMWGVBq8KqTVjCFAxsbk-57">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="QMWGVBq8KqTVjCFAxsbk-52" value="上一次构建已经完成，删除当前目录" style="whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;rounded=1;strokeWidth=2;fillWeight=4;hachureGap=8;hachureAngle=45;sketch=1;spacing=15;fontFamily=Comic Sans MS;" vertex="1" parent="1">
+          <mxGeometry x="301.5" y="802.5" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="QMWGVBq8KqTVjCFAxsbk-53" value="return" style="whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;rounded=1;strokeWidth=2;fillWeight=4;hachureGap=8;hachureAngle=45;sketch=1;spacing=15;fontFamily=Comic Sans MS;" vertex="1" parent="1">
+          <mxGeometry x="790" y="600" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="QMWGVBq8KqTVjCFAxsbk-54" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;sketch=1;fontFamily=Comic Sans MS;" edge="1" parent="1" source="QMWGVBq8KqTVjCFAxsbk-55" target="QMWGVBq8KqTVjCFAxsbk-57">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="QMWGVBq8KqTVjCFAxsbk-55" value="无BUILDING文件和FINISH文件，可能是重复构建，删除目录下的文件" style="whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;rounded=1;strokeWidth=2;fillWeight=4;hachureGap=8;hachureAngle=45;sketch=1;spacing=15;fontFamily=Comic Sans MS;" vertex="1" parent="1">
+          <mxGeometry x="490" y="802.5" width="140" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="QMWGVBq8KqTVjCFAxsbk-56" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;sketch=1;fontFamily=Comic Sans MS;" edge="1" parent="1" source="QMWGVBq8KqTVjCFAxsbk-57" target="QMWGVBq8KqTVjCFAxsbk-59">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="QMWGVBq8KqTVjCFAxsbk-57" value="创建AppID目录，并创建BUILDING文件" style="whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;rounded=1;strokeWidth=2;fillWeight=4;hachureGap=8;hachureAngle=45;sketch=1;spacing=15;fontFamily=Comic Sans MS;" vertex="1" parent="1">
+          <mxGeometry x="390" y="970" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="QMWGVBq8KqTVjCFAxsbk-58" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;sketch=1;fontFamily=Comic Sans MS;" edge="1" parent="1" source="QMWGVBq8KqTVjCFAxsbk-59" target="QMWGVBq8KqTVjCFAxsbk-61">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="QMWGVBq8KqTVjCFAxsbk-59" value="开始执行构建脚本" style="whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;rounded=1;strokeWidth=2;fillWeight=4;hachureGap=8;hachureAngle=45;sketch=1;spacing=15;fontFamily=Comic Sans MS;" vertex="1" parent="1">
+          <mxGeometry x="590" y="970" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="QMWGVBq8KqTVjCFAxsbk-60" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;sketch=1;fontFamily=Comic Sans MS;" edge="1" parent="1" source="QMWGVBq8KqTVjCFAxsbk-61" target="QMWGVBq8KqTVjCFAxsbk-53">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="QMWGVBq8KqTVjCFAxsbk-61" value="构建完成或失败添加FINISH文件，删除BUILDING文件" style="whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;rounded=1;strokeWidth=2;fillWeight=4;hachureGap=8;hachureAngle=45;sketch=1;spacing=15;fontFamily=Comic Sans MS;" vertex="1" parent="1">
           <mxGeometry x="790" y="970" width="120" height="60" as="geometry" />
         </mxCell>
       </root>
