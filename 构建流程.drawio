@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2022-08-18T01:54:02.032Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.0.0 Safari/537.36" etag="kVGdPmfxMPVgN3ZG7r5D" version="20.2.4" type="github">
+<mxfile host="app.diagrams.net" modified="2022-08-18T02:13:10.246Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.0.0 Safari/537.36" etag="G1rIALSGFNwQuoFM5kfH" version="20.2.4" type="github">
   <diagram id="SRiQYdSl_FmvriVkVRbi" name="第 1 页">
     <mxGraphModel dx="1185" dy="635" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" background="none" math="0" shadow="0">
       <root>
@@ -107,7 +107,7 @@
         <mxCell id="QMWGVBq8KqTVjCFAxsbk-30" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;sketch=1;fontFamily=Comic Sans MS;" edge="1" parent="1" source="QMWGVBq8KqTVjCFAxsbk-28" target="QMWGVBq8KqTVjCFAxsbk-16">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="QMWGVBq8KqTVjCFAxsbk-28" value="构建完成或失败添加FINISH脚本" style="whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;rounded=1;strokeWidth=2;fillWeight=4;hachureGap=8;hachureAngle=45;sketch=1;spacing=15;fontFamily=Comic Sans MS;" vertex="1" parent="1">
+        <mxCell id="QMWGVBq8KqTVjCFAxsbk-28" value="构建完成或失败添加FINISH文件，删除BUILDING文件" style="whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;rounded=1;strokeWidth=2;fillWeight=4;hachureGap=8;hachureAngle=45;sketch=1;spacing=15;fontFamily=Comic Sans MS;" vertex="1" parent="1">
           <mxGeometry x="790" y="970" width="120" height="60" as="geometry" />
         </mxCell>
       </root>
