@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2022-08-31T09:04:33.336Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.0.0 Safari/537.36" etag="z7Di7oAiPIhYkKZdU_rC" version="20.2.4" type="github">
+<mxfile host="app.diagrams.net" modified="2022-08-31T09:07:00.697Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.0.0 Safari/537.36" etag="ByjEISTg2Z_WLgAHZ48L" version="20.2.4" type="github">
   <diagram id="gDYkzvTyDBVPJkNko_rk" name="第 1 页">
     <mxGraphModel dx="2818" dy="2585" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -175,7 +175,7 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="RvMpkgv8Pfe3NWQdaYyJ-50" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;i&gt;&amp;lt;&amp;lt;Interface&amp;gt;&amp;gt;&lt;/i&gt;&lt;br&gt;&lt;b&gt;EventListener&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;&lt;br&gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ notify(Event): void&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ getEventInstance(Event):EventListener(static)&lt;br&gt;&lt;br&gt;&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;fontSize=12;fontFamily=Comic Sans MS;html=1;rounded=1;sketch=1;" vertex="1" parent="1">
-          <mxGeometry x="992.5" y="420" width="275" height="140" as="geometry" />
+          <mxGeometry x="992.5" y="420" width="297.5" height="140" as="geometry" />
         </mxCell>
         <mxCell id="RvMpkgv8Pfe3NWQdaYyJ-54" value="CoverityScanEventListener" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fontFamily=Comic Sans MS;rounded=1;sketch=1;" vertex="1" parent="1">
           <mxGeometry x="920" y="927" width="220" height="140" as="geometry" />
