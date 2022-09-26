@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2022-09-26T07:11:35.799Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36" etag="We1yt2gWw8NVz0laCGGk" version="20.3.0" type="github">
+<mxfile host="app.diagrams.net" modified="2022-09-26T08:55:28.020Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36" etag="CBv3kXUaFxl8WaIdDbT4" version="20.3.0" type="github">
   <diagram id="JvtRS4bG2eDYFfKfIYq6" name="第 1 页">
     <mxGraphModel dx="1550" dy="835" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -115,7 +115,7 @@
           <mxGeometry x="380" y="710" width="110" height="60" as="geometry" />
         </mxCell>
         <mxCell id="RmHryUvQ1aIsladpxOFu-32" value="持续部署" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;sketch=1;hachureGap=4;fontFamily=Architects Daughter;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DArchitects%2BDaughter;fontSize=20;" vertex="1" parent="1">
-          <mxGeometry x="400" y="1060" width="110" height="60" as="geometry" />
+          <mxGeometry x="390" y="1060" width="110" height="60" as="geometry" />
         </mxCell>
         <mxCell id="RmHryUvQ1aIsladpxOFu-36" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;sketch=1;hachureGap=4;orthogonalLoop=1;jettySize=auto;html=1;fontFamily=Architects Daughter;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DArchitects%2BDaughter;fontSize=16;endArrow=open;startSize=14;endSize=14;sourcePerimeterSpacing=8;targetPerimeterSpacing=8;" edge="1" parent="1" source="RmHryUvQ1aIsladpxOFu-34" target="RmHryUvQ1aIsladpxOFu-35">
           <mxGeometry relative="1" as="geometry" />
@@ -163,13 +163,13 @@
           <mxGeometry x="1000" y="1070" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="RmHryUvQ1aIsladpxOFu-54" value="持续部署" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;sketch=1;hachureGap=4;fontFamily=Architects Daughter;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DArchitects%2BDaughter;fontSize=20;" vertex="1" parent="1">
-          <mxGeometry x="1280" y="1019" width="110" height="60" as="geometry" />
+          <mxGeometry x="1270" y="1010" width="110" height="60" as="geometry" />
         </mxCell>
         <mxCell id="RmHryUvQ1aIsladpxOFu-55" value="持续集成" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;sketch=1;hachureGap=4;fontFamily=Architects Daughter;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DArchitects%2BDaughter;fontSize=20;" vertex="1" parent="1">
-          <mxGeometry x="1220" y="714" width="110" height="60" as="geometry" />
+          <mxGeometry x="1260" y="714" width="110" height="60" as="geometry" />
         </mxCell>
         <mxCell id="RmHryUvQ1aIsladpxOFu-56" value="项目管理" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;sketch=1;hachureGap=4;fontFamily=Architects Daughter;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DArchitects%2BDaughter;fontSize=20;" vertex="1" parent="1">
-          <mxGeometry x="1241" y="340" width="110" height="60" as="geometry" />
+          <mxGeometry x="1250" y="340" width="110" height="60" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
