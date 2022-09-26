@@ -1,1 +1,177 @@
-<mxfile host="app.diagrams.net" modified="2022-09-26T06:31:47.340Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36" version="20.3.0" etag="oOS8Z6qQAVtFgdPVLFH6" type="github"><diagram id="JvtRS4bG2eDYFfKfIYq6">UzV2zq1wL0osyPDNT0nNUTV2VTV2LsrPL4GwciucU3NyVI0MMlNUjV1UjYwMgFjVyA2HrCFY1qAgsSg1rwSLBiADYTaQg2Y1AA==</diagram></mxfile>
+<mxfile host="app.diagrams.net" modified="2022-09-26T07:11:35.799Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36" etag="We1yt2gWw8NVz0laCGGk" version="20.3.0" type="github">
+  <diagram id="JvtRS4bG2eDYFfKfIYq6" name="第 1 页">
+    <mxGraphModel dx="1550" dy="835" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="RmHryUvQ1aIsladpxOFu-33" value="" style="rounded=1;whiteSpace=wrap;html=1;sketch=1;" vertex="1" parent="1">
+          <mxGeometry x="940" y="20" width="510" height="1160" as="geometry" />
+        </mxCell>
+        <mxCell id="RmHryUvQ1aIsladpxOFu-53" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;sketch=1;" vertex="1" parent="1">
+          <mxGeometry x="960" y="170" width="460" height="420" as="geometry" />
+        </mxCell>
+        <mxCell id="RmHryUvQ1aIsladpxOFu-51" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;sketch=1;" vertex="1" parent="1">
+          <mxGeometry x="960" y="900" width="460" height="240" as="geometry" />
+        </mxCell>
+        <mxCell id="RmHryUvQ1aIsladpxOFu-52" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;sketch=1;" vertex="1" parent="1">
+          <mxGeometry x="960" y="610" width="460" height="268" as="geometry" />
+        </mxCell>
+        <mxCell id="RmHryUvQ1aIsladpxOFu-1" value="" style="rounded=1;whiteSpace=wrap;html=1;sketch=1;" vertex="1" parent="1">
+          <mxGeometry x="40" y="30" width="510" height="1160" as="geometry" />
+        </mxCell>
+        <mxCell id="RmHryUvQ1aIsladpxOFu-29" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;sketch=1;" vertex="1" parent="1">
+          <mxGeometry x="80" y="964" width="440" height="170" as="geometry" />
+        </mxCell>
+        <mxCell id="RmHryUvQ1aIsladpxOFu-27" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;sketch=1;" vertex="1" parent="1">
+          <mxGeometry x="80" y="598" width="440" height="350" as="geometry" />
+        </mxCell>
+        <mxCell id="RmHryUvQ1aIsladpxOFu-26" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;sketch=1;" vertex="1" parent="1">
+          <mxGeometry x="80" y="200" width="440" height="380" as="geometry" />
+        </mxCell>
+        <mxCell id="RmHryUvQ1aIsladpxOFu-4" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;sketch=1;" edge="1" parent="1" source="RmHryUvQ1aIsladpxOFu-2" target="RmHryUvQ1aIsladpxOFu-3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="RmHryUvQ1aIsladpxOFu-2" value="开始" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.start_1;whiteSpace=wrap;sketch=1;rounded=1;" vertex="1" parent="1">
+          <mxGeometry x="120" y="80" width="100" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="RmHryUvQ1aIsladpxOFu-6" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;sketch=1;" edge="1" parent="1" source="RmHryUvQ1aIsladpxOFu-3" target="RmHryUvQ1aIsladpxOFu-5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="RmHryUvQ1aIsladpxOFu-7" value="git地址&lt;br&gt;jira项目地址" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];sketch=1;rounded=1;" vertex="1" connectable="0" parent="RmHryUvQ1aIsladpxOFu-6">
+          <mxGeometry x="-0.265" y="-1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="RmHryUvQ1aIsladpxOFu-3" value="jira流程申请创建项目" style="whiteSpace=wrap;html=1;strokeWidth=2;fillColor=#e1d5e7;strokeColor=#9673a6;sketch=1;rounded=1;" vertex="1" parent="1">
+          <mxGeometry x="110" y="220" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="RmHryUvQ1aIsladpxOFu-9" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;sketch=1;" edge="1" parent="1" source="RmHryUvQ1aIsladpxOFu-5" target="RmHryUvQ1aIsladpxOFu-8">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="RmHryUvQ1aIsladpxOFu-5" value="项目管理平台创建项目" style="whiteSpace=wrap;html=1;strokeWidth=2;sketch=1;rounded=1;" vertex="1" parent="1">
+          <mxGeometry x="110" y="360" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="RmHryUvQ1aIsladpxOFu-11" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;sketch=1;" edge="1" parent="1" source="RmHryUvQ1aIsladpxOFu-8" target="RmHryUvQ1aIsladpxOFu-10">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="RmHryUvQ1aIsladpxOFu-8" value="项目管理平台创建应用，并关联到项目" style="whiteSpace=wrap;html=1;strokeWidth=2;sketch=1;rounded=1;" vertex="1" parent="1">
+          <mxGeometry x="110" y="480" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="RmHryUvQ1aIsladpxOFu-13" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;sketch=1;" edge="1" parent="1" source="RmHryUvQ1aIsladpxOFu-10" target="RmHryUvQ1aIsladpxOFu-12">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="RmHryUvQ1aIsladpxOFu-10" value="持续集成：新建一个持续集成流水线，选择对应的模板" style="whiteSpace=wrap;html=1;strokeWidth=2;sketch=1;rounded=1;" vertex="1" parent="1">
+          <mxGeometry x="110" y="620" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="RmHryUvQ1aIsladpxOFu-15" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;sketch=1;" edge="1" parent="1" source="RmHryUvQ1aIsladpxOFu-12" target="RmHryUvQ1aIsladpxOFu-14">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="RmHryUvQ1aIsladpxOFu-12" value="持续集成：点击运行可触发编译，扫描等流水线步骤，并产生制品" style="whiteSpace=wrap;html=1;strokeWidth=2;sketch=1;rounded=1;" vertex="1" parent="1">
+          <mxGeometry x="110" y="760" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="RmHryUvQ1aIsladpxOFu-17" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;sketch=1;" edge="1" parent="1" source="RmHryUvQ1aIsladpxOFu-14" target="RmHryUvQ1aIsladpxOFu-16">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="RmHryUvQ1aIsladpxOFu-24" value="开发环境" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];sketch=1;rounded=1;" vertex="1" connectable="0" parent="RmHryUvQ1aIsladpxOFu-17">
+          <mxGeometry x="-0.255" y="-1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="RmHryUvQ1aIsladpxOFu-19" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;sketch=1;" edge="1" parent="1" source="RmHryUvQ1aIsladpxOFu-14" target="RmHryUvQ1aIsladpxOFu-18">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="RmHryUvQ1aIsladpxOFu-25" value="正式环境" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];sketch=1;rounded=1;" vertex="1" connectable="0" parent="RmHryUvQ1aIsladpxOFu-19">
+          <mxGeometry x="-0.2489" y="-4" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="RmHryUvQ1aIsladpxOFu-14" value="持续集成：进入运行历史选择对应版本的制品可进行提交上线操作" style="whiteSpace=wrap;html=1;strokeWidth=2;sketch=1;rounded=1;" vertex="1" parent="1">
+          <mxGeometry x="110" y="878" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="RmHryUvQ1aIsladpxOFu-16" value="持续部署：点击运行按钮可选择制品以及制品部署的集群" style="whiteSpace=wrap;html=1;strokeWidth=2;sketch=1;rounded=1;" vertex="1" parent="1">
+          <mxGeometry x="110" y="1040" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="RmHryUvQ1aIsladpxOFu-21" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;sketch=1;" edge="1" parent="1" source="RmHryUvQ1aIsladpxOFu-18" target="RmHryUvQ1aIsladpxOFu-20">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="RmHryUvQ1aIsladpxOFu-18" value="持续集成：点击提交上线可得到当前制品的ID信息" style="whiteSpace=wrap;html=1;strokeWidth=2;sketch=1;rounded=1;" vertex="1" parent="1">
+          <mxGeometry x="320" y="880" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="RmHryUvQ1aIsladpxOFu-22" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;sketch=1;" edge="1" parent="1" source="RmHryUvQ1aIsladpxOFu-20" target="RmHryUvQ1aIsladpxOFu-16">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="RmHryUvQ1aIsladpxOFu-23" value="运维执行" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];sketch=1;rounded=1;" vertex="1" connectable="0" parent="RmHryUvQ1aIsladpxOFu-22">
+          <mxGeometry x="-0.1438" y="4" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="RmHryUvQ1aIsladpxOFu-20" value="发布上线：创建jira发布申请单，附上提交上线的制品信息，以及哦我只是变更，SQL变更信息等等" style="whiteSpace=wrap;html=1;strokeWidth=2;fillColor=#e1d5e7;strokeColor=#9673a6;sketch=1;rounded=1;" vertex="1" parent="1">
+          <mxGeometry x="300" y="990" width="160" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="RmHryUvQ1aIsladpxOFu-30" value="项目管理" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;sketch=1;hachureGap=4;fontFamily=Architects Daughter;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DArchitects%2BDaughter;fontSize=20;" vertex="1" parent="1">
+          <mxGeometry x="390" y="350" width="110" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="RmHryUvQ1aIsladpxOFu-31" value="持续集成" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;sketch=1;hachureGap=4;fontFamily=Architects Daughter;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DArchitects%2BDaughter;fontSize=20;" vertex="1" parent="1">
+          <mxGeometry x="380" y="710" width="110" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="RmHryUvQ1aIsladpxOFu-32" value="持续部署" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;sketch=1;hachureGap=4;fontFamily=Architects Daughter;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DArchitects%2BDaughter;fontSize=20;" vertex="1" parent="1">
+          <mxGeometry x="400" y="1060" width="110" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="RmHryUvQ1aIsladpxOFu-36" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;sketch=1;hachureGap=4;orthogonalLoop=1;jettySize=auto;html=1;fontFamily=Architects Daughter;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DArchitects%2BDaughter;fontSize=16;endArrow=open;startSize=14;endSize=14;sourcePerimeterSpacing=8;targetPerimeterSpacing=8;" edge="1" parent="1" source="RmHryUvQ1aIsladpxOFu-34" target="RmHryUvQ1aIsladpxOFu-35">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="RmHryUvQ1aIsladpxOFu-34" value="开始" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.start_1;whiteSpace=wrap;sketch=1;rounded=1;" vertex="1" parent="1">
+          <mxGeometry x="1010" y="90" width="100" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="RmHryUvQ1aIsladpxOFu-38" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;sketch=1;hachureGap=4;orthogonalLoop=1;jettySize=auto;html=1;fontFamily=Architects Daughter;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DArchitects%2BDaughter;fontSize=16;endArrow=open;startSize=14;endSize=14;sourcePerimeterSpacing=8;targetPerimeterSpacing=8;" edge="1" parent="1" source="RmHryUvQ1aIsladpxOFu-35" target="RmHryUvQ1aIsladpxOFu-37">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="RmHryUvQ1aIsladpxOFu-35" value="手动在git上面创建项目" style="whiteSpace=wrap;html=1;strokeWidth=2;sketch=1;rounded=1;" vertex="1" parent="1">
+          <mxGeometry x="1000" y="230" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="RmHryUvQ1aIsladpxOFu-40" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;sketch=1;hachureGap=4;orthogonalLoop=1;jettySize=auto;html=1;fontFamily=Architects Daughter;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DArchitects%2BDaughter;fontSize=16;endArrow=open;startSize=14;endSize=14;sourcePerimeterSpacing=8;targetPerimeterSpacing=8;" edge="1" parent="1" source="RmHryUvQ1aIsladpxOFu-37" target="RmHryUvQ1aIsladpxOFu-39">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="RmHryUvQ1aIsladpxOFu-37" value="项目信息创建项目" style="whiteSpace=wrap;html=1;strokeWidth=2;sketch=1;rounded=1;" vertex="1" parent="1">
+          <mxGeometry x="1000" y="370" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="RmHryUvQ1aIsladpxOFu-42" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;sketch=1;hachureGap=4;orthogonalLoop=1;jettySize=auto;html=1;fontFamily=Architects Daughter;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DArchitects%2BDaughter;fontSize=16;endArrow=open;startSize=14;endSize=14;sourcePerimeterSpacing=8;targetPerimeterSpacing=8;" edge="1" parent="1" source="RmHryUvQ1aIsladpxOFu-39" target="RmHryUvQ1aIsladpxOFu-41">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="RmHryUvQ1aIsladpxOFu-39" value="应用管理创建应用，并绑定项目，根据应用名称搜索gitlab的项目进行绑定" style="whiteSpace=wrap;html=1;strokeWidth=2;sketch=1;rounded=1;" vertex="1" parent="1">
+          <mxGeometry x="1000" y="510" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="RmHryUvQ1aIsladpxOFu-44" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;sketch=1;hachureGap=4;orthogonalLoop=1;jettySize=auto;html=1;fontFamily=Architects Daughter;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DArchitects%2BDaughter;fontSize=16;endArrow=open;startSize=14;endSize=14;sourcePerimeterSpacing=8;targetPerimeterSpacing=8;" edge="1" parent="1" source="RmHryUvQ1aIsladpxOFu-41" target="RmHryUvQ1aIsladpxOFu-43">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="RmHryUvQ1aIsladpxOFu-41" value="应用编译新建，配置编译的环境，分支等等信息" style="whiteSpace=wrap;html=1;strokeWidth=2;sketch=1;rounded=1;" vertex="1" parent="1">
+          <mxGeometry x="1000" y="650" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="RmHryUvQ1aIsladpxOFu-48" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;sketch=1;hachureGap=4;orthogonalLoop=1;jettySize=auto;html=1;fontFamily=Architects Daughter;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DArchitects%2BDaughter;fontSize=16;endArrow=open;startSize=14;endSize=14;sourcePerimeterSpacing=8;targetPerimeterSpacing=8;" edge="1" parent="1" source="RmHryUvQ1aIsladpxOFu-43" target="RmHryUvQ1aIsladpxOFu-47">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="RmHryUvQ1aIsladpxOFu-43" value="制品库保存编译之后的制品镜像" style="whiteSpace=wrap;html=1;strokeWidth=2;sketch=1;rounded=1;" vertex="1" parent="1">
+          <mxGeometry x="1000" y="790" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="RmHryUvQ1aIsladpxOFu-50" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;sketch=1;hachureGap=4;orthogonalLoop=1;jettySize=auto;html=1;fontFamily=Architects Daughter;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DArchitects%2BDaughter;fontSize=16;endArrow=open;startSize=14;endSize=14;sourcePerimeterSpacing=8;targetPerimeterSpacing=8;" edge="1" parent="1" source="RmHryUvQ1aIsladpxOFu-47" target="RmHryUvQ1aIsladpxOFu-49">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="RmHryUvQ1aIsladpxOFu-47" value="新建应用的部署配置,包括服务器地址，部署路径等等" style="whiteSpace=wrap;html=1;strokeWidth=2;sketch=1;rounded=1;" vertex="1" parent="1">
+          <mxGeometry x="1000" y="930" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="RmHryUvQ1aIsladpxOFu-49" value="创建应用部署申请单，填写项目+应用+制品镜像的版本，+环境，提交部署信息" style="whiteSpace=wrap;html=1;strokeWidth=2;sketch=1;rounded=1;" vertex="1" parent="1">
+          <mxGeometry x="1000" y="1070" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="RmHryUvQ1aIsladpxOFu-54" value="持续部署" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;sketch=1;hachureGap=4;fontFamily=Architects Daughter;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DArchitects%2BDaughter;fontSize=20;" vertex="1" parent="1">
+          <mxGeometry x="1280" y="1019" width="110" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="RmHryUvQ1aIsladpxOFu-55" value="持续集成" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;sketch=1;hachureGap=4;fontFamily=Architects Daughter;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DArchitects%2BDaughter;fontSize=20;" vertex="1" parent="1">
+          <mxGeometry x="1220" y="714" width="110" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="RmHryUvQ1aIsladpxOFu-56" value="项目管理" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;sketch=1;hachureGap=4;fontFamily=Architects Daughter;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DArchitects%2BDaughter;fontSize=20;" vertex="1" parent="1">
+          <mxGeometry x="1241" y="340" width="110" height="60" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
