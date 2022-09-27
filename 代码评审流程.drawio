@@ -1,9 +1,15 @@
-<mxfile host="app.diagrams.net" modified="2022-09-27T07:12:02.882Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36" etag="RpWxXny5bnKKlVwJRuCw" version="20.3.0" type="github">
+<mxfile host="app.diagrams.net" modified="2022-09-27T07:16:07.480Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36" etag="ZDG41z6Xo494XSjjPVRU" version="20.3.0" type="github">
   <diagram id="R8IiflEz0d23TfFEJtmY" name="第 1 页">
     <mxGraphModel dx="2214" dy="1193" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        <mxCell id="WAr3PEvsFhnmKJyq8Ucf-85" value="" style="rounded=1;whiteSpace=wrap;html=1;sketch=1;hachureGap=4;fontFamily=Architects Daughter;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DArchitects%2BDaughter;fontSize=20;" vertex="1" parent="1">
+          <mxGeometry y="330" width="1615" height="1660" as="geometry" />
+        </mxCell>
+        <mxCell id="WAr3PEvsFhnmKJyq8Ucf-88" value="" style="rounded=0;whiteSpace=wrap;html=1;sketch=1;hachureGap=4;fontFamily=Architects Daughter;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DArchitects%2BDaughter;fontSize=20;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
+          <mxGeometry x="28.5" y="1180" width="1545" height="660" as="geometry" />
+        </mxCell>
         <mxCell id="WAr3PEvsFhnmKJyq8Ucf-60" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;fontColor=#333333;strokeColor=#666666;sketch=1;" vertex="1" parent="1">
           <mxGeometry x="680" y="1465" width="850" height="310" as="geometry" />
         </mxCell>
@@ -43,8 +49,8 @@
         <mxCell id="WAr3PEvsFhnmKJyq8Ucf-11" value="devloper-C" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;sketch=1;rounded=1;" vertex="1" parent="1">
           <mxGeometry x="60" y="1025" width="30" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="WAr3PEvsFhnmKJyq8Ucf-12" value="&lt;h1&gt;迭代开发过程&lt;/h1&gt;&lt;p&gt;&lt;b&gt;1、需求1由devloper-A负责，&lt;/b&gt;&lt;/p&gt;&lt;p&gt;基于上一个版本创建临时功能分支：release/dev/feature1&lt;/p&gt;&lt;p&gt;&lt;b&gt;2、需求2由devloper-B负责，&lt;/b&gt;&lt;/p&gt;基于上一个版本创建临时功能分支：release/dev/feature2&lt;p&gt;&lt;b&gt;3、需求3由devloper-C负责，&lt;/b&gt;&lt;/p&gt;基于上一个版本创建临时功能分支：release/dev/feature3" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=1;sketch=1;" vertex="1" parent="1">
-          <mxGeometry x="40" y="440" width="550" height="200" as="geometry" />
+        <mxCell id="WAr3PEvsFhnmKJyq8Ucf-12" value="&lt;h1&gt;迭代开发过程&lt;/h1&gt;&lt;p style=&quot;font-size: 15px;&quot;&gt;&lt;b style=&quot;&quot;&gt;&lt;font style=&quot;font-size: 15px;&quot;&gt;1、需求1由devloper-A负责，&lt;/font&gt;&lt;/b&gt;&lt;/p&gt;&lt;p style=&quot;font-size: 15px;&quot;&gt;&lt;font style=&quot;font-size: 15px;&quot;&gt;基于上一个版本创建临时功能分支：release/dev/feature1&lt;/font&gt;&lt;/p&gt;&lt;p style=&quot;font-size: 15px;&quot;&gt;&lt;b&gt;&lt;font style=&quot;font-size: 15px;&quot;&gt;2、需求2由devloper-B负责，&lt;/font&gt;&lt;/b&gt;&lt;/p&gt;&lt;font style=&quot;font-size: 15px;&quot;&gt;基于上一个版本创建临时功能分支：release/dev/feature2&lt;/font&gt;&lt;p style=&quot;font-size: 15px;&quot;&gt;&lt;b&gt;&lt;font style=&quot;font-size: 15px;&quot;&gt;3、需求3由devloper-C负责，&lt;/font&gt;&lt;/b&gt;&lt;/p&gt;&lt;font style=&quot;font-size: 15px;&quot;&gt;基于上一个版本创建临时功能分支：release/dev/feature3&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=1;sketch=1;" vertex="1" parent="1">
+          <mxGeometry x="40" y="440" width="580" height="250" as="geometry" />
         </mxCell>
         <mxCell id="WAr3PEvsFhnmKJyq8Ucf-27" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;sketch=1;" edge="1" parent="1" source="WAr3PEvsFhnmKJyq8Ucf-17" target="WAr3PEvsFhnmKJyq8Ucf-26">
           <mxGeometry relative="1" as="geometry" />
@@ -107,11 +113,11 @@
         <mxCell id="WAr3PEvsFhnmKJyq8Ucf-36" value="集成测试环境&lt;br&gt;release/uat/2.1.0" style="rounded=1;whiteSpace=wrap;html=1;sketch=1;" vertex="1" parent="1">
           <mxGeometry x="1150" y="885" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="WAr3PEvsFhnmKJyq8Ucf-39" value="&lt;h1&gt;代码评审&lt;/h1&gt;&lt;p&gt;为什么要执行代码评审&lt;/p&gt;&lt;p&gt;1.&amp;nbsp; &amp;nbsp; &amp;nbsp; 代码评审的最大好处是，当你知道你的每一行代码都有另外一个人看，自然而然会更加卖力的表现，拿出最好的状态编码，从而间接提升代码的质量；&lt;/p&gt;&lt;p&gt;2.&amp;nbsp; &amp;nbsp; &amp;nbsp; 代码评审可以及时发现一些容易发现的BUG，而不必将发现BUG的时间点推迟到测试阶段；&lt;/p&gt;&lt;p&gt;3.&amp;nbsp; &amp;nbsp; &amp;nbsp; 代码评审可以保证至少有两个人都理解任何一份代码。当出现员工休假，离职等情况的时候，至少保证团队的代码不会陷入无人理解或者无人处理的状况&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=1;sketch=1;" vertex="1" parent="1">
-          <mxGeometry x="30" y="1200" width="750" height="200" as="geometry" />
+        <mxCell id="WAr3PEvsFhnmKJyq8Ucf-39" value="&lt;h1&gt;代码评审&lt;/h1&gt;&lt;p style=&quot;font-size: 15px;&quot;&gt;&lt;font style=&quot;font-size: 15px;&quot;&gt;为什么要执行代码评审&lt;/font&gt;&lt;/p&gt;&lt;p style=&quot;font-size: 15px;&quot;&gt;&lt;font style=&quot;font-size: 15px;&quot;&gt;1.&amp;nbsp; &amp;nbsp; &amp;nbsp; 代码评审的最大好处是，当你知道你的每一行代码都有另外一个人看，自然而然会更加卖力的表现，拿出最好的状态编码，从而间接提升代码的质量；&lt;/font&gt;&lt;/p&gt;&lt;p style=&quot;font-size: 15px;&quot;&gt;&lt;font style=&quot;font-size: 15px;&quot;&gt;2.&amp;nbsp; &amp;nbsp; &amp;nbsp; 代码评审可以及时发现一些容易发现的BUG，而不必将发现BUG的时间点推迟到测试阶段；&lt;/font&gt;&lt;/p&gt;&lt;p style=&quot;font-size: 15px;&quot;&gt;&lt;font style=&quot;font-size: 15px;&quot;&gt;3.&amp;nbsp; &amp;nbsp; &amp;nbsp; 代码评审可以保证至少有两个人都理解任何一份代码。当出现员工休假，离职等情况的时候，至少保证团队的代码不会陷入无人理解或者无人处理的状况&lt;/font&gt;&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=1;sketch=1;" vertex="1" parent="1">
+          <mxGeometry x="100" y="1200" width="1300" height="190" as="geometry" />
         </mxCell>
-        <mxCell id="WAr3PEvsFhnmKJyq8Ucf-40" value="&lt;h1&gt;注意事项&lt;/h1&gt;&lt;p&gt;&lt;b&gt;1、分支命名规范：&lt;/b&gt;&lt;/p&gt;&lt;p&gt;本地分支必须命名为&amp;nbsp; release/dev/feature-xxx ，release/dev/bugfix-xxx&lt;/p&gt;&lt;p&gt;&lt;b&gt;2、提交规范&lt;/b&gt;&lt;/p&gt;&lt;p&gt;git的commitUser和Email必须为OA账号和员工邮箱&lt;br&gt;&lt;/p&gt;&lt;p&gt;git的提交内容需要按照模板填写&lt;/p&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=1;sketch=1;" vertex="1" parent="1">
-          <mxGeometry x="670" y="440" width="450" height="180" as="geometry" />
+        <mxCell id="WAr3PEvsFhnmKJyq8Ucf-40" value="&lt;h1&gt;注意事项&lt;/h1&gt;&lt;p style=&quot;font-size: 15px;&quot;&gt;&lt;b style=&quot;&quot;&gt;&lt;font style=&quot;font-size: 15px;&quot;&gt;1、分支命名规范：&lt;/font&gt;&lt;/b&gt;&lt;/p&gt;&lt;p style=&quot;font-size: 15px;&quot;&gt;&lt;font style=&quot;font-size: 15px;&quot;&gt;本地分支必须命名为&amp;nbsp; release/dev/feature-xxx ，release/dev/bugfix-xxx&lt;/font&gt;&lt;/p&gt;&lt;p style=&quot;font-size: 15px;&quot;&gt;&lt;b style=&quot;&quot;&gt;&lt;font style=&quot;font-size: 15px;&quot;&gt;2、提交规范&lt;/font&gt;&lt;/b&gt;&lt;/p&gt;&lt;p style=&quot;font-size: 15px;&quot;&gt;&lt;font style=&quot;font-size: 15px;&quot;&gt;git的commitUser和Email必须为OA账号和员工邮箱&lt;br style=&quot;&quot;&gt;&lt;/font&gt;&lt;/p&gt;&lt;p style=&quot;font-size: 15px;&quot;&gt;&lt;font style=&quot;font-size: 15px;&quot;&gt;git的提交内容需要按照模板填写&lt;/font&gt;&lt;/p&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=1;sketch=1;" vertex="1" parent="1">
+          <mxGeometry x="670" y="440" width="500" height="230" as="geometry" />
         </mxCell>
         <mxCell id="WAr3PEvsFhnmKJyq8Ucf-47" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;sketch=1;" edge="1" parent="1" source="WAr3PEvsFhnmKJyq8Ucf-45" target="WAr3PEvsFhnmKJyq8Ucf-46">
           <mxGeometry relative="1" as="geometry" />
@@ -238,6 +244,9 @@
         </mxCell>
         <mxCell id="WAr3PEvsFhnmKJyq8Ucf-83" value="&lt;font style=&quot;font-size: 11px;&quot;&gt;分支自动生成需要校验之前的评审记录，每一次提测都会在前一个评审分支+1，如果第一次提测，那么编号就是1&lt;/font&gt;" style="text;html=1;strokeColor=#6c8ebf;fillColor=#dae8fc;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=1;fontSize=10;sketch=1;" vertex="1" parent="1">
           <mxGeometry x="700" y="1720" width="230" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="WAr3PEvsFhnmKJyq8Ucf-90" value="" style="shape=singleArrow;direction=south;whiteSpace=wrap;html=1;rounded=1;sketch=1;hachureGap=4;fontFamily=Architects Daughter;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DArchitects%2BDaughter;fontSize=20;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
+          <mxGeometry x="890" y="945" width="60" height="235" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
