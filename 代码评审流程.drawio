@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2022-09-27T07:16:07.480Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36" etag="ZDG41z6Xo494XSjjPVRU" version="20.3.0" type="github">
+<mxfile host="app.diagrams.net" modified="2022-09-28T02:56:15.267Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36" etag="7RNoH81Lm7cFLn8B3bIA" version="20.3.0" type="github" pages="2">
   <diagram id="R8IiflEz0d23TfFEJtmY" name="第 1 页">
-    <mxGraphModel dx="2214" dy="1193" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="2214" dy="1113" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -247,6 +247,23 @@
         </mxCell>
         <mxCell id="WAr3PEvsFhnmKJyq8Ucf-90" value="" style="shape=singleArrow;direction=south;whiteSpace=wrap;html=1;rounded=1;sketch=1;hachureGap=4;fontFamily=Architects Daughter;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DArchitects%2BDaughter;fontSize=20;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
           <mxGeometry x="890" y="945" width="60" height="235" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="zkrPROs4geH7yY_SC1nZ" name="第 2 页">
+    <mxGraphModel dx="1550" dy="779" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="7BQ4i3D5WVs4PGAga1ld-1" value="环境隔离怎么做" style="text;strokeColor=none;fillColor=none;html=1;fontSize=24;fontStyle=1;verticalAlign=middle;align=center;rounded=1;sketch=1;hachureGap=4;fontFamily=Architects Daughter;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DArchitects%2BDaughter;" vertex="1" parent="1">
+          <mxGeometry x="240" y="30" width="260" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="7BQ4i3D5WVs4PGAga1ld-2" value="&lt;ul&gt;&lt;li&gt;开发环境&lt;/li&gt;&lt;li&gt;联调环境&lt;/li&gt;&lt;li&gt;测试环境&lt;/li&gt;&lt;li&gt;预发布环境&lt;/li&gt;&lt;li&gt;正式环境&lt;/li&gt;&lt;/ul&gt;" style="text;strokeColor=none;fillColor=none;html=1;whiteSpace=wrap;verticalAlign=middle;overflow=hidden;rounded=1;sketch=1;hachureGap=4;fontFamily=Architects Daughter;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DArchitects%2BDaughter;fontSize=15;" vertex="1" parent="1">
+          <mxGeometry x="150" y="120" width="220" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="7BQ4i3D5WVs4PGAga1ld-3" value="项目开发过程中需要解决的问题：&lt;br&gt;希望在提测的过程中只提交当前需求相关的代码&lt;br&gt;&lt;br&gt;&lt;div&gt;1、迭代管理中需求管理提供需求id&lt;/div&gt;&lt;div&gt;2、开发需求的时候需求分支名称需要以需求ID为后缀结尾&lt;/div&gt;&lt;div&gt;3、在代码合并联调环境的时候需要选择需求分支，可多选（可进行分组管理）&lt;/div&gt;&lt;div&gt;4、联调完成之后进行提测，提测的时候选择需求，并且检查当前联调环境上面的需求分支是否匹配&lt;/div&gt;&lt;br&gt;后台在提测开始前（提前规避冲突）和提测成功后检查开发分支和uat分支是否存在冲突，如果有冲突则提醒开发人员需要协商解决冲突" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;whiteSpace=wrap;rounded=0;sketch=1;hachureGap=4;fontFamily=Architects Daughter;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DArchitects%2BDaughter;fontSize=15;" vertex="1" parent="1">
+          <mxGeometry x="54" y="250" width="736" height="210" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
